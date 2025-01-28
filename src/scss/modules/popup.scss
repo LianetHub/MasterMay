@@ -1,0 +1,132 @@
+.fancybox-bg {
+	background: rgba($color: #1d1d1d, $alpha: 0.4);
+}
+
+.fancybox__content {
+	color: inherit;
+	background: none;
+	padding: 0;
+}
+
+.fancybox__content :focus:not(.carousel__button.is-close) {
+	outline: none;
+}
+
+.popup {
+	display: none;
+	width: 100%;
+	background: #fff;
+	max-width: 910px;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	scrollbar-width: 0;
+	overflow: visible;
+	border-radius: 10px;
+	padding: 30px 20px;
+	@media (min-width: $md5) {
+		padding: 70px 60px;
+	}
+	&.popup-lg {
+		max-width: 1420px;
+		padding: 60px;
+	}
+	&.popup-md {
+		max-width: 1180px;
+	}
+	.fancybox-button {
+		&[data-fancybox-close] {
+			top: 10px;
+			right: 10px;
+			width: 30px;
+			height: 30px;
+			padding: 5px;
+			@media (min-width: $md4) {
+				padding: 10px;
+				top: 30px;
+				right: 30px;
+				width: 60px;
+				height: 60px;
+			}
+			background: transparent;
+			border-radius: 50%;
+			color: #999;
+			border: 1px solid #999;
+			transition: background-color 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
+			@media (any-hover: hover) {
+				&:hover {
+					background: $text;
+					color: #fff;
+					border-color: $text;
+				}
+			}
+		}
+	}
+}
+
+.succes {
+	background: $text;
+	color: #fff;
+	// .succes__header
+	&__header {
+		gap: 70px;
+		row-gap: 20px;
+	}
+	// .succes__header-main
+	&__header-main {
+		max-width: 510px;
+	}
+	// .succes__title
+	&__title {
+	}
+	// .succes__subtitle
+	&__subtitle {
+		font-weight: 300;
+		line-height: 100%;
+		margin-top: 20px;
+		@media (min-width: $md4) {
+			font-size: 20px;
+			margin-top: 30px;
+		}
+		@media (min-width: $md2) {
+			margin-top: 50px;
+			font-size: 30px;
+		}
+	}
+	// .succes__header-icon
+	&__header-icon {
+		align-self: center;
+	}
+	// .succes__btn
+	&__btn {
+		margin-top: 30px;
+		font-size: 14px;
+		padding: 16px;
+		@media (min-width: $md4) {
+			padding: 20px;
+			margin-top: 40px;
+			font-size: 18px;
+		}
+		@media (min-width: $md2) {
+			padding: 28px;
+			margin-top: 60px;
+			font-size: 20px;
+		}
+		font-weight: 700;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		border-radius: 50px;
+		border: 1px solid #fff;
+		width: 100%;
+		display: block;
+		text-align: center;
+		cursor: pointer;
+		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				background: #fff;
+				color: $text;
+			}
+		}
+	}
+}

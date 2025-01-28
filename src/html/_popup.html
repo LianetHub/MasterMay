@@ -1,0 +1,802 @@
+<div id="callback" class="popup">
+    <div role="form" class="popup__form form d-flex flex-column">
+        <h2 class="form__title title">
+            Оставьте ваш номер телефона
+        </h2>
+        <p class="form__subtitle">
+            Мы свяжемся с вами и ответим на все вопросы
+        </p>
+        <input type="tel" name="phone" class="form-control mt-lg-4 mt-2" placeholder="Номер телефона">
+        <div class="form__footer mt-lg-4 mt-3 d-flex flex-md-row flex-column align-items-md-center flex-lg-nowrap flex-md-wrap">
+            <span role="button" class="btn btn-secondary">
+                Отправить заявку
+                <span class="btn__icon icon-check"></span>
+            </span>
+            <p class="form__footer-privacy">нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
+        </div>
+    </div>
+</div>
+
+<div id="succes-send" class="popup succes">
+    <div class="succes__header d-flex align-items-center flex-wrap">
+        <div class="succes__header-main">
+            <h2 class="succes__title title">
+                Мы вам скоро перезвоним
+            </h2>
+            <p class="succes__subtitle">
+                Получили вашу заявку и позвоним вам в рабочее время по номеру
+            </p>
+        </div>
+        <div class="succes__header-icon">
+            <img src="@img/icons/check.svg" alt="Иконка">
+        </div>
+    </div>
+    <span role="button" data-fancybox-close class="succes__btn">Отлично!</span>
+</div>
+<div id="config" class="popup popup-lg">
+    <div class="order-more">
+        <div class="order__options d-flex flex-wrap">
+            <label class="order__option">
+                <input type="radio" checked name="config" value="foundation" class="order__option-input hidden" hidden>
+                <span class="order__option-btn">
+                    Фундамент
+                </span>
+            </label>
+            <label class="order__option">
+                <input type="radio" name="config" value="roof" class="order__option-input hidden" hidden>
+                <span class="order__option-btn">
+                    Кровля
+                </span>
+            </label>
+            <label class="order__option">
+                <input type="radio" name="config" value="timber" class="order__option-input hidden" hidden>
+                <span class="order__option-btn">
+                    Брус
+                </span>
+            </label>
+            <label class="order__option">
+                <input type="radio" name="config" value="contour" class="order__option-input hidden" hidden>
+                <span class="order__option-btn">
+                    Тёплый контур
+                </span>
+            </label>
+            <label class="order__option">
+                <input type="radio" name="config" value="gas" class="order__option-input hidden" hidden>
+                <span class="order__option-btn">
+                    Газоснабжение
+                </span>
+            </label>
+        </div>
+        <div class="order-more__tabs">
+            <div class="order-more__content active" id="foundation">
+                <div class="order-more__cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-1.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">Сваи</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="piles" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-2.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">Монолитная плита</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
+                                    <li>Песчанная-гравийная подушка 300/ 100 мм</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="slab" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-more__btns d-md-block d-none">
+                    <div class="row">
+                        <div class="col-6">
+                            <span data-option="piles" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                        <div class="col-6">
+                            <span data-option="slab" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-more__content" id="roof">
+                <div class="order-more__cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-1.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">Металочерепица</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="metaltiles" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-2.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">Мягкая кровля</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
+                                    <li>Песчанная-гравийная подушка 300/ 100 мм</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="soft" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-more__btns d-md-block d-none">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span data-option="metaltiles" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-6">
+                            <span data-option="soft" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-more__content" id="timber">
+                <div class="order-more__cards">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-1.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md"> Клееный брус 200 х 185 мм</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="glued" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-2.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">Высокий клееный брус 160 х 270 мм</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
+                                    <li>Песчанная-гравийная подушка 300/ 100 мм</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="high" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-1.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">
+                                    Профилированный брус камерной сушки 200 х 185 мм
+                                </div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитная ЖБ плита 250 мм с усиленным ростверком 200 мм</li>
+                                    <li>Песчанная-гравийная подушка 300/ 100 мм</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                </ul>
+                                <span data-option="profiled" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-more__btns d-md-block d-none">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span data-option="glued" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span data-option="high" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                        <div class="col-md-4">
+                            <span data-option="profiled" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-more__content" id="contour">
+                <div class="order-more__cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="order-more__card d-flex flex-column">
+                                <div class="order-more__card-image">
+                                    <img src="@img/fund-1.png" alt="Фото фундамента">
+                                </div>
+                                <div class="order-more__card-name title-md">Тёплый контур</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="contour-needed" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="order-more__btns d-md-block d-none">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span data-option="contour-needed" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-more__content" id="gas">
+                <div class="order-more__cards">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="order-more__card d-flex flex-column">
+
+                                <div class="order-more__card-name title-md">Газоснабжение</div>
+                                <ul class="order-more__card-list">
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                    <li>Монолитные ЖБ сваи 200 х 200 мм (L = 3000 мм) 30 шт.</li>
+                                    <li>Разметка участка, монтаж свай, <br> выравнивание высоты по нивелиру</li>
+                                </ul>
+                                <span data-option="gas-needed" class="d-md-none mt-5 order-more__card-btn btn btn-primary">
+                                    Выбрать
+                                    <span class="btn__icon icon-check"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-more__btns d-md-block d-none">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <span data-option="gas-needed" class="order-more__card-btn btn btn-primary">
+                                Выбрать
+                                <span class="btn__icon icon-check"></span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="floors" class="popup popup-md">
+    <div class="materials-desc">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title-md">
+                    Полы
+                </h2>
+                <ol class="materials-desc__list">
+                    <li>
+                        Черепной брусок 40х50 мм
+                    </li>
+                    <li>
+                        Лаги пола: доска 50х150/50х200 мм
+                    </li>
+                    <li>
+                        Черновой пол: доска 20х100 мм
+                    </li>
+                    <li>
+                        Утеплитель 100/150/200 мм
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <div class="materials-desc__image">
+                    <img src="@img/materials-desc.png" alt="Изображение части">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="walls" class="popup popup-md">
+    <div class="materials-desc">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title-md">
+                    Наружные стены
+                </h2>
+                <ol class="materials-desc__list">
+                    <li>
+                        Черепной брусок 40х50 мм
+                    </li>
+                    <li>
+                        Лаги пола: доска 50х150/50х200 мм
+                    </li>
+                    <li>
+                        Черновой пол: доска 20х100 мм
+                    </li>
+                    <li>
+                        Утеплитель 100/150/200 мм
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <div class="materials-desc__image">
+                    <img src="@img/materials-desc.png" alt="Изображение части">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="partitions" class="popup popup-md">
+    <div class="materials-desc">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title-md">
+                    Перегородки
+                </h2>
+                <ol class="materials-desc__list">
+                    <li>
+                        Черепной брусок 40х50 мм
+                    </li>
+                    <li>
+                        Лаги пола: доска 50х150/50х200 мм
+                    </li>
+                    <li>
+                        Черновой пол: доска 20х100 мм
+                    </li>
+                    <li>
+                        Утеплитель 100/150/200 мм
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <div class="materials-desc__image">
+                    <img src="@img/materials-desc.png" alt="Изображение части">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="overlaps" class="popup popup-md">
+    <div class="materials-desc">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title-md">
+                    Перекрытия
+                </h2>
+                <ol class="materials-desc__list">
+                    <li>
+                        Черепной брусок 40х50 мм
+                    </li>
+                    <li>
+                        Лаги пола: доска 50х150/50х200 мм
+                    </li>
+                    <li>
+                        Черновой пол: доска 20х100 мм
+                    </li>
+                    <li>
+                        Утеплитель 100/150/200 мм
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <div class="materials-desc__image">
+                    <img src="@img/materials-desc.png" alt="Изображение части">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="roofs" class="popup popup-md">
+    <div class="materials-desc">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="title-md">
+                    Кровля
+                </h2>
+                <ol class="materials-desc__list">
+                    <li>
+                        Черепной брусок 40х50 мм
+                    </li>
+                    <li>
+                        Лаги пола: доска 50х150/50х200 мм
+                    </li>
+                    <li>
+                        Черновой пол: доска 20х100 мм
+                    </li>
+                    <li>
+                        Утеплитель 100/150/200 мм
+                    </li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <div class="materials-desc__image">
+                    <img src="@img/materials-desc.png" alt="Изображение части">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="quiz" class="popup">
+    <div class="quiz">
+        <h2 class="quiz__title title-xl">Укажите <br> пожелания к дому</h2>
+        <div class="quiz__main">
+            <div class="quiz__progressbar">
+                <div class="quiz__progressbar-progress" style="--progress: 20%"></div>
+                <div class="quiz__progressbar-info">
+                    <span class="quiz__progressbar-current">1</span>
+                    из
+                    <span class="quiz__progressbar-total">5</span>
+                </div>
+            </div>
+            <div class="quiz__blocks">
+                <div class="quiz__block active">
+                    <div class="quiz__block-header">
+                        <div class="quiz__block-caption title-md">Какая будет этажность?</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" checked name="floors-numbers" value="1" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    1 этаж
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="floors-numbers" value="2" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    2 этажа
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__block">
+                    <div class="quiz__block-header">
+                        <div class="quiz__block-caption title-md">Какова общая площадь строения?</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" checked name="total-square" value="110" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    110 м²
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="total-square" value="50" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    50-100 м²
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="total-square" value="100" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    100-150 м²
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="total-square" value="150" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    150-200 м²
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="total-square" value="200" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    более 200 м²
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__block">
+                    <div class="quiz__block-header">
+                        <div class="quiz__block-caption title-md">Сколько нужно спальных комнат?</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" checked name="sleeping-rooms" value="1" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    1 спальня
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="sleeping-rooms" value="2" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    2 спальни
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="sleeping-rooms" value="3" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    3 спальни
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="sleeping-rooms" value=">3" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    более 3 спален
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="sleeping-rooms" value="none" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    не важно
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="quiz__block">
+                    <div class="quiz__block-header">
+                        <div class="quiz__block-caption title-md">Укажите пожелания к дому</div>
+                        <p class="quiz__block-subtitle">Можно пропустить</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="checkbox" checked name="wishes" value="attic" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Мансарда
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="checkbox" name="wishes" value="terrace" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Терраса
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="checkbox" name="wishes" value="veranda" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Веранда
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="checkbox" name="wishes" value="porch" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Крыльцо
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="checkbox" name="wishes" value="balcony" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Балкон
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="checkbox" name="wishes" value="second-light" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Второй свет
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-12">
+                            <label class="order__option w-100">
+                                <input type="checkbox" name="wishes" value="second-light" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100 flex-sm-nowrap flex-wrap">
+                                    Другое
+                                    <input type="text" name="more" placeholder="Укажите любые пожелания">
+                                </span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="quiz__block">
+                    <div class="quiz__block-header">
+                        <div class="quiz__block-caption title-md">Когда планируете <br> приступить к строительству?</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="radio" checked name="start" value="1" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    В течение месяца
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="start" value="2" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Через 2-3 месяца
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="start" value="6" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Через полгода
+                                </span>
+                            </label>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="order__option w-100">
+                                <input type="radio" name="start" value="none" class="order__option-input hidden" hidden>
+                                <span class="order__option-btn w-100">
+                                    Пока неизвесно
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="quiz__controls d-flex">
+                <span role="button" class="quiz__controls-prev disabled icon-arrow"></span>
+                <span role="button" class="quiz__controls-next icon-arrow"></span>
+                <span role="button" class="quiz__controls-submit icon-check hidden"></span>
+            </div>
+        </div>
+        <div class="quiz__form hidden">
+            <div class="quiz__caption title-md">Осталось указать данные для связи</div>
+            <div class="form__body">
+                <div class="row">
+                    <div class="col-xl-6">
+                        <input type="text" name="name" class="form-control" placeholder="Ваше имя">
+                    </div>
+                    <div class="col-xl-6">
+                        <input type="tel" name="phone" class="form-control" placeholder="Номер телефона">
+                    </div>
+                    <div class="col-12">
+                        <textarea name="comment" class="form-control" placeholder="Комментарий к заявке"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form__footer mt-lg-4 mt-3 d-flex flex-md-row flex-column align-items-md-center flex-lg-nowrap flex-md-wrap">
+                <span role="button" class="btn btn-secondary">
+                    Отправить заявку
+                    <span class="btn__icon icon-check"></span>
+                </span>
+                <p class="form__footer-privacy">нажимая на кнопку, вы соглашаетесь на обработку персональных данных</p>
+            </div>
+        </div>
+    </div>
+</div>
