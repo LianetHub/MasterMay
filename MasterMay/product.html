@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+
+<head>
     <title>МастерМей | Страница товара</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-
     <!-- Open Graph  -->
     <meta property="og:type" content="business.business" />
     <meta property="og:title" content="МастерМей | Страница товара" />
@@ -18,7 +18,6 @@
     <meta property="og:site_name" content="" />
     <meta property="og:locale" content="ru_RU" />
     <!-- Open Graph  -->
-
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="" />
@@ -26,184 +25,544 @@
     <meta property="twitter:site" content="" />
     <meta property="twitter:url" content="" />
     <!-- Twitter -->
-
     <!-- plugins -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css" />
     <!-- plugins -->
-
     <link rel="stylesheet" href="css/reset.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-
 </head>
 
-    <body>
-        <div class="wrapper">
-            <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="header__side d-flex align-items-center justify-content-between">
-                    <a href="/" class="header__logo">
-                        <img src="img/logo.svg" alt="logo">
-                    </a>
-                    <p class="header__tagline color-grey">Ваши правнуки оценят наше качество</p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="header__main d-flex align-items-center">
-                    <nav aria-label="Меню в шапке" class="header__menu menu">
-                        <ul class="menu__list d-flex align-items-center flex-wrap font-weight-medium">
-                            <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__actions d-flex">
-                        <span class="header__action rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
-                        <a href="" class="header__action rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
-                        <a href="" class="header__action border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
-                        <span role="button" class="header__menu-btn icon-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="header__side d-flex align-items-center justify-content-between">
+                            <a href="/" class="header__logo">
+                                <img src="img/logo.svg" alt="logo">
+                            </a>
+                            <p class="header__tagline color-grey">Ваши правнуки оценят наше качество</p>
+                        </div>
                     </div>
-                    <a href="" class="header__callback btn btn-primary icon-arrow">Связаться</a>
+                    <div class="col-6">
+                        <div class="header__main d-flex align-items-center">
+                            <nav aria-label="Меню в шапке" class="header__menu menu">
+                                <ul class="menu__list d-flex align-items-center flex-wrap font-weight-medium">
+                                    <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__actions d-flex">
+                                <span class="header__action rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
+                                <a href="" class="header__action rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
+                                <a href="" class="header__action border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
+                                <span role="button" class="header__menu-btn icon-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <a href="" class="header__callback btn btn-primary icon-arrow">Связаться</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</header>
-            <main class="page">
-                <section class="project">
-                    <div class="container">
-                        <div class="project__main">
-                            <div class="project__image overflow-hidden rounded-sm masked">
-                                <img src="img/project-banner.jpg" class="cover-image masked-sm" alt="Фото проекта">
-                            </div>
-                            <div class="project__body">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <ul class="project__stats d-flex flex-wrap align-items-center">
-                                            <li class="project__stat">11 x 13 м</li>
-                                            <li class="project__stat">124 м²</li>
-                                            <li class="project__stat">Одноэтажный</li>
-                                            <li class="project__stat">от 2,5 млн р</li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="project__info">
-                                            <h1 class="project__title title">Жасмин</h1>
-                                            <div class="project__desc d-flex align-items-center color-grey">
-                                                <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
-                                                <span class="project__desc-line w-100"></span>
-                                                <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
-                                            </div>
+        </header>
+        <main class="page">
+            <section class="project-card">
+                <div class="container">
+                    <div class="project-card__main">
+                        <div class="project-card__image overflow-hidden rounded-sm masked">
+                            <picture>
+                                <source srcset="img/project-banner.webp" type="image/webp"><img src="img/project-banner.jpg" class="cover-image masked-sm" alt="Фото проекта">
+                            </picture>
+                        </div>
+                        <div class="project-card__body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="project-card__stats d-flex flex-wrap align-items-center">
+                                        <li class="project-card__stat">11 x 13 м</li>
+                                        <li class="project-card__stat">124 м²</li>
+                                        <li class="project-card__stat">Одноэтажный</li>
+                                        <li class="project-card__stat">от 2,5 млн р</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <div class="project-card__info">
+                                        <h1 class="project__title title">Жасмин</h1>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <section class="project-about">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="project-about__info">
-                                    <span class="project-about__caption">О проекте</span>
-                                    <h2 class="project-about__title">
-                                        Используем качественное <span class="color-green">дерево собственного производства</span> из Костромского леса
-                                    </h2>
+                </div>
+            </section>
+            <section class="project-about">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="project-about__info">
+                                <span class="project-about__caption">О проекте</span>
+                                <h2 class="project-about__title"> Используем качественное <span class="color-green">дерево собственного производства</span> из Костромского леса </h2>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="project-about__text">
+                                <p>Общая площадь составляет 178 м², в которой располагается 4 комнаты: 3 спальнии просторная кухня - гостиная. Площадь обеденной и гостевой зоны 48 м² - что станет отличным местом для приготовления вкусных блюд и совместных вечеров с семьёй.</p>
+                                <p>Проект предусматривает два санузла для вашего удобства. Срок строительства дома составляет всего лишь 95 дней. Дом поставляется в формате тёплого контура.</p>
+                                <p>«Акатис» — это ваш новый дом, в котором вы сможете создать свою уютную и комфортную атмосферу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="benefits">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card mh-100 p-3 d-flex flex-column border rounded-sm">
+                                <div class="card__value title">9 х 12 м</div>
+                                <div class="card__subtitle">габариты дома</div>
+                                <div class="card__icon ml-auto">
+                                    <img src="img/icons/width.svg" alt="Иконка">
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <div class="project-about__text">
-                                    <p>Общая площадь составляет 178 м², в которой располагается 4 комнаты: 3 спальнии просторная кухня - гостиная. Площадь обеденной и гостевой зоны 48 м² - что станет отличным местом для приготовления вкусных блюд и совместных вечеров с семьёй.</p>
-                                    <p>Проект предусматривает два санузла для вашего удобства. Срок строительства дома составляет всего лишь 95 дней. Дом поставляется в формате тёплого контура.</p>
-                                    <p>«Акатис» — это ваш новый дом, в котором вы сможете создать свою уютную и комфортную атмосферу.</p>
+                        </div>
+                        <div class="col-3">
+                            <div class="card mh-100 p-3 d-flex flex-column border rounded-sm">
+                                <div class="card__value title">2</div>
+                                <div class="card__subtitle">этажа</div>
+                                <div class="card__icon ml-auto">
+                                    <img src="img/icons/handrail.svg" alt="Иконка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card mh-100 p-3 d-flex flex-column border rounded-sm bg-light">
+                                <div class="card__value title">142 м²</div>
+                                <div class="card__subtitle">площадь застройки</div>
+                                <div class="card__icon ml-auto">
+                                    <img src="img/icons/house-design.svg" alt="Иконка">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card mh-100 p-3 d-flex flex-column border rounded-sm bg-light">
+                                <div class="card__value title">87.5 м²</div>
+                                <div class="card__subtitle">жилая площадь</div>
+                                <div class="card__icon ml-auto">
+                                    <img src="img/icons/room.svg" alt="Иконка">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
-                <div class="benefits">
-                    <div class="container">
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="img/gallery/01.jpg" data-fancybox="gallery" class="gallery__block rounded-sm overflow-hidden">
+                                <picture>
+                                    <source srcset="img/gallery/01.webp" type="image/webp"><img src="img/gallery/01.jpg" class="cover-image" alt="Фото проекта">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="img/gallery/02.jpg" data-fancybox="gallery" class="gallery__block rounded-sm overflow-hidden">
+                                <picture>
+                                    <source srcset="img/gallery/02.webp" type="image/webp"><img src="img/gallery/02.jpg" class="cover-image" alt="Фото проекта">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <a href="img/gallery/03.jpg" data-fancybox="gallery" class="gallery__block rounded-sm overflow-hidden">
+                                <picture>
+                                    <source srcset="img/gallery/03.webp" type="image/webp"><img src="img/gallery/03.jpg" class="cover-image" alt="Фото проекта">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="desc">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="card mh-100 p-3 d-flex flex-column border rounded-sm">
+                                        <div class="card__value title">5</div>
+                                        <div class="card__subtitle">просторных комнат</div>
+                                        <div class="card__icon ml-auto">
+                                            <img src="img/icons/virtual.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card mh-100 p-3 d-flex flex-column border rounded-sm">
+                                        <div class="card__value title">3</div>
+                                        <div class="card__subtitle">спальни</div>
+                                        <div class="card__icon ml-auto">
+                                            <img src="img/icons/bedroom.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card mh-100 p-3 d-flex flex-column border rounded-sm">
+                                        <div class="card__value title">3</div>
+                                        <div class="card__subtitle">санузла</div>
+                                        <div class="card__icon ml-auto">
+                                            <img src="img/icons/sink.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card mh-100 p-3 d-flex flex-column border rounded-sm">
+                                        <ul class="card__list d-flex flex-column">
+                                            <li class="card__list-item">Прямая крыша</li>
+                                            <li class="card__list-item">Балкон</li>
+                                            <li class="card__list-item">Котельная</li>
+                                            <li class="card__list-item">Терраса</li>
+                                        </ul>
+                                        <div class="card__icon ml-auto">
+                                            <img src="img/icons/width.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex flex-column">
+                                <a href="img/plan.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm overflow-hidden">
+                                    <picture>
+                                        <source srcset="img/plan.webp" type="image/webp"><img src="img/plan.jpg" alt="Фото планировки">
+                                    </picture>
+                                </a>
+                                <a href="img/plan-2.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm overflow-hidden mt-4">
+                                    <picture>
+                                        <source srcset="img/plan-2.webp" type="image/webp"><img src="img/plan-2.jpg" alt="Фото планировки">
+                                    </picture>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="container">
+                    <div class="gallery__slider">
+                        <a href="" class="gallery__slide">
+                            <picture>
+                                <source srcset="img/gallery/04.webp" type="image/webp"><img src="img/gallery/04.jpg" class="cover-image" alt="">
+                            </picture>
+                        </a>
+                        <a href="" class="gallery__slide">
+                            <picture>
+                                <source srcset="img/gallery/05.webp" type="image/webp"><img src="img/gallery/05.jpg" class="cover-image" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <section class="tariffs">
+                <div class="container">
+                    <h2 class="tariffs__title">Комплектации</h2>
+                    <p class="tariffs__subtitle title text-center">Предлагаем <span class="color-green">несколько комплектаций</span> под любые ваши пожелания</p>
+                    <div class="tariffs__body">
                         <div class="row">
-                            <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">9 х 12 м</div>
-                                    <div class="benefits-card__subtitle">габариты дома</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="img/icons/width.svg" alt="Иконка">
+                            <div class="col-4">
+                                <div class="tariff h-100 d-flex flex-column align-items-start rounded-sm border p-3">
+                                    <div class="tariff__header w-100 d-flex justify-content-between align-items-center">
+                                        <div class="tariff__labels d-flex">
+                                            <div class="tariff__label">30 дней</div>
+                                            <div class="tariff__label">от 4 млн ₽</div>
+                                        </div>
+                                        <div class="tariff__steps">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="67" viewBox="0 0 65 67" fill="none">
+                                                <path d="M0 0H65V19H10.9127L0 0Z" fill="#79B445" />
+                                                <path d="M13.7842 24H64.9998V43H24.6969L13.7842 24Z" fill="#EFE9E5" />
+                                                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" fill="#EFE9E5" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="tariff__title title">Эконом</h3>
+                                    <p class="tariff__subtitle subtitle">Готовый для дачного проживания дом на лето</p>
+                                    <div class="tariff__image masked rounded-sm">
+                                        <picture>
+                                            <source srcset="img/tariffs/01.webp" type="image/webp"><img src="img/tariffs/01.jpg" alt="Фото комплектации">
+                                        </picture>
+                                    </div>
+                                    <a href="" class="tariff__btn btn btn-primary icon-arrow">Выбрать</a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="tariff h-100 d-flex flex-column align-items-start rounded-sm border p-3">
+                                    <div class="tariff__header w-100 d-flex justify-content-between align-items-center">
+                                        <div class="tariff__labels d-flex">
+                                            <div class="tariff__label">42 дня</div>
+                                            <div class="tariff__label">от 5,6 млн ₽</div>
+                                        </div>
+                                        <div class="tariff__steps">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="67" viewBox="0 0 65 67" fill="none">
+                                                <path d="M0 0H65V19H10.9127L0 0Z" fill="#79B445" />
+                                                <path d="M13.7842 24H64.9998V43H24.6969L13.7842 24Z" fill="#79B445" />
+                                                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" fill="#EFE9E5" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="tariff__title title">Комфорт</h3>
+                                    <p class="tariff__subtitle subtitle">Готовый для дачного проживания дом на весну – лето – осень</p>
+                                    <div class="tariff__image masked rounded-sm">
+                                        <picture>
+                                            <source srcset="img/tariffs/02.webp" type="image/webp"><img src="img/tariffs/02.jpg" alt="Фото комплектации">
+                                        </picture>
+                                    </div>
+                                    <a href="" class="tariff__btn btn btn-primary icon-arrow">Выбрать</a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="tariff h-100 d-flex flex-column align-items-start rounded-sm border p-3">
+                                    <div class="tariff__header w-100 d-flex justify-content-between align-items-center">
+                                        <div class="tariff__labels d-flex">
+                                            <div class="tariff__label">68 дней</div>
+                                            <div class="tariff__label">от 6,5 млн ₽</div>
+                                        </div>
+                                        <div class="tariff__steps">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="65" height="67" viewBox="0 0 65 67" fill="none">
+                                                <path d="M0 0H65V19H10.9127L0 0Z" fill="#79B445" />
+                                                <path d="M13.7842 24H64.9998V43H24.6969L13.7842 24Z" fill="#79B445" />
+                                                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" fill="#79B445" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <h3 class="tariff__title title">ПМЖ</h3>
+                                    <p class="tariff__subtitle subtitle">Готовый «под ключ» дом для круглогодичного проживания</p>
+                                    <div class="tariff__image masked rounded-sm">
+                                        <picture>
+                                            <source srcset="img/tariffs/03.webp" type="image/webp"><img src="img/tariffs/03.jpg" alt="Фото комплектации">
+                                        </picture>
+                                    </div>
+                                    <a href="" class="tariff__btn btn btn-primary icon-arrow">Выбрать</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cases">
+                <div class="container">
+                    <h2 class="cases__title text-center title">Вдохновляйтесь <span class="color-green">историями владельцев</span> наших домов</h2>
+                    <div class="cases__slider">
+                        <div class="cases__slide">
+                            <div class="cases__slide-image">
+                                <picture>
+                                    <source srcset="img/cases/01.webp" type="image/webp"><img src="img/cases/01.jpg" alt="Фото">
+                                </picture>
+                            </div>
+                            <div class="cases__slide-desc">д. Завидово, Конановский район, Тверская обл.</div>
+                        </div>
+                        <div class="cases__slide">
+                            <div class="cases__slide-image">
+                                <picture>
+                                    <source srcset="img/cases/02.webp" type="image/webp"><img src="img/cases/02.jpg" alt="Фото">
+                                </picture>
+                            </div>
+                            <div class="cases__slide-desc">д. Завидово, Конановский район, Тверская обл.</div>
+                        </div>
+                        <div class="cases__slide">
+                            <div class="cases__slide-image">
+                                <picture>
+                                    <source srcset="img/cases/03.webp" type="image/webp"><img src="img/cases/03.jpg" alt="Фото">
+                                </picture>
+                            </div>
+                            <div class="cases__slide-desc">д. Завидово, Конановский район, Тверская обл.</div>
+                        </div>
+                    </div>
+                    <a href="" class="cases__more btn w-100">Посмотреть все работы</a>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <h2 class="projects__title text-center">Наши проекты</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="projects__caption"> Взгляните на <span class="color-green">самые популярные</span> проекты </div>
+                            <div class="projects__items">
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Жасмин</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Делея</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">2</div>
-                                    <div class="benefits-card__subtitle">этажа</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="img/icons/handrail.svg" alt="Иконка">
+                        </div>
+                        <div class="col-6">
+                            <div class="projects__items">
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Агатис</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">142 м²</div>
-                                    <div class="benefits-card__subtitle">площадь застройки</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="img/icons/house-design.svg" alt="Иконка">
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">87.5 м²</div>
-                                    <div class="benefits-card__subtitle">жилая площадь</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="img/icons/room.svg" alt="Иконка">
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Делея</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="gallery">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <a href="img/gallery/01.jpg" data-fancybox="gallery" class="gallery__block rounded-sm overflow-hidden">
-                                    <img src="img/gallery/01.jpg" class="cover-image" alt="Фото проекта">
-                                </a>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="footer__side rounded-sm bg-dark text-white d-flex flex-column justify-content-between">
+                        <div class="footer__socials d-flex flex-column">
+                            <a href="" class="footer__social icon-vk"></a>
+                            <a href="" class="footer__social icon-youtube"></a>
+                            <a href="" class="footer__social icon-whatsapp"></a>
+                            <a href="" class="footer__social icon-telegram"></a>
+                        </div>
+                        <a href="/" class="footer__logo">
+                            <img src="img/logo-short.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__content rounded-sm bg-dark text-white">
+                        <div class="footer__body d-flex">
+                            <div class="footer__main">
+                                <h2 class="footer__title title">Давайте знакомиться?</h2>
+                                <a href="" class="footer__btn btn btn-light icon-arrow">Отправить заявку</a>
+                                <div class="footer__image">
+                                    <picture>
+                                        <source srcset="img/footer.webp" type="image/webp"><img src="img/footer.png" alt="Фото проекта">
+                                    </picture>
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <a href="img/gallery/02.jpg" data-fancybox="gallery" class="gallery__block rounded-sm overflow-hidden">
-                                    <img src="img/gallery/02.jpg" class="cover-image" alt="Фото проекта">
-                                </a>
-                            </div>
-                            <div class="col-6">
-                                <a href="img/gallery/03.jpg" data-fancybox="gallery" class="gallery__block rounded-sm overflow-hidden">
-                                    <img src="img/gallery/03.jpg" class="cover-image" alt="Фото проекта">
-                                </a>
-                            </div>
+                        </div>
+                        <div class="footer__bottom d-flex color-grey">
+                            <div class="footer__copy"> ООО «БЕРДО» 2007 — 2024 </div>
+                            <ul class="footer__details">
+                                <li class="footer__details-item">СК МАСТЕРМАЙ</li>
+                                <li class="footer__details-item">ИНН 4408003799</li>
+                                <li class="footer__details-item">КПП 440801001</li>
+                                <li class="footer__details-item">ОГРН 1064433017109</li>
+                                <li class="footer__details-item"><a href="">Политика конфиденциальности</a></li>
+                            </ul>
+                            <a href="" class="footer__prod"> Разработка и продвижение <img src="img/logo-prod.svg" alt="БОБРЫ">
+                            </a>
                         </div>
                     </div>
                 </div>
-            </main>
-            
-        </div>
-        <!-- plugins -->
-<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
-<!-- plugins -->
+            </div>
+        </footer>
+    </div> <!-- plugins -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+    <!-- plugins -->
+    <script defer src="js/app.min.js"></script>
+</body>
 
-<script defer src="js/app.min.js"></script>
-    </body>
 </html>

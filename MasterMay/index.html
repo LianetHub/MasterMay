@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
+
+<head>
     <title>МастерМей | Главная</title>
     <meta charset="UTF-8" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
-
     <!-- Open Graph  -->
     <meta property="og:type" content="business.business" />
     <meta property="og:title" content="МастерМей | Главная" />
@@ -18,7 +18,6 @@
     <meta property="og:site_name" content="" />
     <meta property="og:locale" content="ru_RU" />
     <!-- Open Graph  -->
-
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:title" content="" />
@@ -26,70 +25,336 @@
     <meta property="twitter:site" content="" />
     <meta property="twitter:url" content="" />
     <!-- Twitter -->
-
     <!-- plugins -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.css" />
     <!-- plugins -->
-
     <link rel="stylesheet" href="css/reset.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-
 </head>
 
-    <body>
-        <div class="wrapper">
-            <header class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="header__side d-flex align-items-center justify-content-between">
-                    <a href="/" class="header__logo">
-                        <img src="img/logo.svg" alt="logo">
-                    </a>
-                    <p class="header__tagline color-grey">Ваши правнуки оценят наше качество</p>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="header__main d-flex align-items-center">
-                    <nav aria-label="Меню в шапке" class="header__menu menu">
-                        <ul class="menu__list d-flex align-items-center flex-wrap font-weight-medium">
-                            <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
-                        </ul>
-                    </nav>
-                    <div class="header__actions d-flex">
-                        <span class="header__action rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
-                        <a href="" class="header__action rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
-                        <a href="" class="header__action border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
-                        <span role="button" class="header__menu-btn icon-menu">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </span>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="header__side d-flex align-items-center justify-content-between">
+                            <a href="/" class="header__logo">
+                                <img src="img/logo.svg" alt="logo">
+                            </a>
+                            <p class="header__tagline color-grey">Ваши правнуки оценят наше качество</p>
+                        </div>
                     </div>
-                    <a href="" class="header__callback btn btn-primary icon-arrow">Связаться</a>
+                    <div class="col-6">
+                        <div class="header__main d-flex align-items-center">
+                            <nav aria-label="Меню в шапке" class="header__menu menu">
+                                <ul class="menu__list d-flex align-items-center flex-wrap font-weight-medium">
+                                    <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                                    <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
+                                </ul>
+                            </nav>
+                            <div class="header__actions d-flex">
+                                <span class="header__action rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
+                                <a href="" class="header__action rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
+                                <a href="" class="header__action border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
+                                <span role="button" class="header__menu-btn icon-menu">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </div>
+                            <a href="" class="header__callback btn btn-primary icon-arrow">Связаться</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-</header>
-            <main class="page">
+        </header>
+        <main class="page">
+            <section class="prices">
+                <div class="container">
+                    <ul class="prices__list d-flex">
+                        <li class="prices__item">
+                            <a href="" class="prices__item-link">
+                                <span class="prices__item-image">
+                                    <picture>
+                                        <source srcset="img/project.webp" type="image/webp"><img src="img/project.jpg" alt="Фото проекта">
+                                    </picture>
+                                </span>
+                                <span class="prices__item-title">Дома из бруса от 1.8 млн ₽</span>
+                            </a>
+                        </li>
+                        <li class="prices__item">
+                            <a href="" class="prices__item-link">
+                                <span class="prices__item-image">
+                                    <picture>
+                                        <source srcset="img/project.webp" type="image/webp"><img src="img/project.jpg" alt="Фото проекта">
+                                    </picture>
+                                </span>
+                                <span class="prices__item-title">Дома из бревна от 2 млн ₽</span>
+                            </a>
+                        </li>
+                        <li class="prices__item">
+                            <a href="" class="prices__item-link">
+                                <span class="prices__item-image">
+                                    <picture>
+                                        <source srcset="img/project.webp" type="image/webp"><img src="img/project.jpg" alt="Фото проекта">
+                                    </picture>
+                                </span>
+                                <span class="prices__item-title">Бани от 700 тыс ₽</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="projects">
+                <div class="container">
+                    <h2 class="projects__title text-center">Наши проекты</h2>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="projects__caption"> Взгляните на <span class="color-green">самые популярные</span> проекты </div>
+                            <div class="projects__items">
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/01.webp" type="image/webp"><img src="img/projects/01.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Жасмин</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Делея</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="projects__items">
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/02.webp" type="image/webp"><img src="img/projects/02.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Агатис</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="project d-flex flex-column">
+                                    <div class="project__header position-relative">
+                                        <a href="" class="project__image d-block">
+                                            <picture>
+                                                <source srcset="img/projects/03.webp" type="image/webp"><img src="img/projects/03.jpg" class="cover-image" alt="Фото проекта">
+                                            </picture>
+                                        </a>
+                                        <div class="project__more d-flex justify-content-between">
+                                            <span role="button" class="project__favorite favorite-btn"></span>
+                                            <ul class="project__info d-flex">
+                                                <li class="project__info-item">11 x 13 м</li>
+                                                <li class="project__info-item">124 м²</li>
+                                                <li class="project__info-item">Одноэтажный</li>
+                                                <li class="project__info-item">от 2,5 млн р</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="project__body mt-4 border rounded-sm">
+                                        <a href="" class="project__title title">Делея</a>
+                                        <div class="project__desc d-flex align-items-center color-grey">
+                                            <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
+                                            <span class="project__desc-line w-100"></span>
+                                            <div class="project__desc-text order-last flex-shrink-0">из бруса</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cases">
+                <div class="container">
+                    <h2 class="cases__title text-center title">Вдохновляйтесь <span class="color-green">историями владельцев</span> наших домов</h2>
+                    <div class="cases__slider">
+                        <div class="cases__slide">
+                            <div class="cases__slide-image">
+                                <picture>
+                                    <source srcset="img/cases/01.webp" type="image/webp"><img src="img/cases/01.jpg" alt="Фото">
+                                </picture>
+                            </div>
+                            <div class="cases__slide-desc">д. Завидово, Конановский район, Тверская обл.</div>
+                        </div>
+                        <div class="cases__slide">
+                            <div class="cases__slide-image">
+                                <picture>
+                                    <source srcset="img/cases/02.webp" type="image/webp"><img src="img/cases/02.jpg" alt="Фото">
+                                </picture>
+                            </div>
+                            <div class="cases__slide-desc">д. Завидово, Конановский район, Тверская обл.</div>
+                        </div>
+                        <div class="cases__slide">
+                            <div class="cases__slide-image">
+                                <picture>
+                                    <source srcset="img/cases/03.webp" type="image/webp"><img src="img/cases/03.jpg" alt="Фото">
+                                </picture>
+                            </div>
+                            <div class="cases__slide-desc">д. Завидово, Конановский район, Тверская обл.</div>
+                        </div>
+                    </div>
+                    <a href="" class="cases__more btn w-100">Посмотреть все работы</a>
+                </div>
+            </section>
+            <section class="articles">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3"> <a href="" class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden bg-dark text-white">
+                                <span class="article-card__title">Какой дом лучше выбрать</span>
+                                <span class="article-card__btn btn border-top border-left border-right text-center d-block">Подробнее</span>
+                                <span class="article-card__image position-relative">
+                                    <picture>
+                                        <source srcset="img/articles/01.webp" type="image/webp"><img src="img/articles/01.jpg" alt="Фото статьи">
+                                    </picture>
+                                </span>
+                            </a> </div>
+                        <div class="col-3"> <a href="" class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden bg-dark text-white">
+                                <span class="article-card__title">Современные технологии и производство</span>
+                                <span class="article-card__btn btn border-top border-left border-right text-center d-block">Подробнее</span>
+                                <span class="article-card__image position-relative">
+                                    <picture>
+                                        <source srcset="img/articles/02.webp" type="image/webp"><img src="img/articles/02.jpg" alt="Фото статьи">
+                                    </picture>
+                                </span>
+                            </a> </div>
+                        <div class="col-3"> <a href="" class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden bg-dark text-white">
+                                <span class="article-card__title">Прозрачная и понятная схема работы</span>
+                                <span class="article-card__btn btn border-top border-left border-right text-center d-block">Подробнее</span>
+                                <span class="article-card__image position-relative">
+                                    <picture>
+                                        <source srcset="@@image" type="image/webp"><img src="@@image" alt="Фото статьи">
+                                    </picture>
+                                </span>
+                            </a> </div>
+                        <div class="col-3"> <a href="" class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden bg-dark text-white">
+                                <span class="article-card__title">Честные отзывы владельцев домов</span>
+                                <span class="article-card__btn btn border-top border-left border-right text-center d-block">Подробнее</span>
+                                <span class="article-card__image position-relative">
+                                    <picture>
+                                        <source srcset="img/articles/03.webp" type="image/webp"><img src="img/articles/03.jpg" alt="Фото статьи">
+                                    </picture>
+                                </span>
+                            </a> </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="footer__side rounded-sm bg-dark text-white d-flex flex-column justify-content-between">
+                        <div class="footer__socials d-flex flex-column">
+                            <a href="" class="footer__social icon-vk"></a>
+                            <a href="" class="footer__social icon-youtube"></a>
+                            <a href="" class="footer__social icon-whatsapp"></a>
+                            <a href="" class="footer__social icon-telegram"></a>
+                        </div>
+                        <a href="/" class="footer__logo">
+                            <img src="img/logo-short.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="footer__content rounded-sm bg-dark text-white">
+                        <div class="footer__body d-flex">
+                            <div class="footer__main">
+                                <h2 class="footer__title title">Давайте знакомиться?</h2>
+                                <a href="" class="footer__btn btn btn-light icon-arrow">Отправить заявку</a>
+                                <div class="footer__image">
+                                    <picture>
+                                        <source srcset="img/footer.webp" type="image/webp"><img src="img/footer.png" alt="Фото проекта">
+                                    </picture>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__bottom d-flex color-grey">
+                            <div class="footer__copy"> ООО «БЕРДО» 2007 — 2024 </div>
+                            <ul class="footer__details">
+                                <li class="footer__details-item">СК МАСТЕРМАЙ</li>
+                                <li class="footer__details-item">ИНН 4408003799</li>
+                                <li class="footer__details-item">КПП 440801001</li>
+                                <li class="footer__details-item">ОГРН 1064433017109</li>
+                                <li class="footer__details-item"><a href="">Политика конфиденциальности</a></li>
+                            </ul>
+                            <a href="" class="footer__prod"> Разработка и продвижение <img src="img/logo-prod.svg" alt="БОБРЫ">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- plugins -->
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
+    <!-- plugins -->
+    <script defer src="js/app.min.js"></script>
+</body>
 
-            </main>
-            
-        </div>
-        <!-- plugins -->
-<script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script defer src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.1/nouislider.min.js"></script>
-<!-- plugins -->
-
-<script defer src="js/app.min.js"></script>
-    </body>
 </html>

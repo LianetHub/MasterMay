@@ -8,24 +8,24 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
-                <section class="project">
+                <section class="project-card">
                     <div class="container">
-                        <div class="project__main">
-                            <div class="project__image overflow-hidden rounded-sm masked">
+                        <div class="project-card__main">
+                            <div class="project-card__image overflow-hidden rounded-sm masked">
                                 <img src="@img/project-banner.jpg" class="cover-image masked-sm" alt="Фото проекта">
                             </div>
-                            <div class="project__body">
+                            <div class="project-card__body">
                                 <div class="row">
                                     <div class="col-6">
-                                        <ul class="project__stats d-flex flex-wrap align-items-center">
-                                            <li class="project__stat">11 x 13 м</li>
-                                            <li class="project__stat">124 м²</li>
-                                            <li class="project__stat">Одноэтажный</li>
-                                            <li class="project__stat">от 2,5 млн р</li>
+                                        <ul class="project-card__stats d-flex flex-wrap align-items-center">
+                                            <li class="project-card__stat">11 x 13 м</li>
+                                            <li class="project-card__stat">124 м²</li>
+                                            <li class="project-card__stat">Одноэтажный</li>
+                                            <li class="project-card__stat">от 2,5 млн р</li>
                                         </ul>
                                     </div>
                                     <div class="col-6">
-                                        <div class="project__info">
+                                        <div class="project-card__info">
                                             <h1 class="project__title title">Жасмин</h1>
                                             <div class="project__desc d-flex align-items-center color-grey">
                                                 <div class="project__desc-text order-first flex-shrink-0">Проект дома</div>
@@ -64,40 +64,34 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">9 х 12 м</div>
-                                    <div class="benefits-card__subtitle">габариты дома</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="@img/icons/width.svg" alt="Иконка">
-                                    </div>
-                                </div>
+                                @@include('./html/templates/_card.html', {
+                                "title": "9 х 12 м",
+                                "subtitle": "габариты дома",
+                                "icon": "@img/icons/width.svg"
+                                })
                             </div>
                             <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">2</div>
-                                    <div class="benefits-card__subtitle">этажа</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="@img/icons/handrail.svg" alt="Иконка">
-                                    </div>
-                                </div>
+                                @@include('./html/templates/_card.html', {
+                                "title": "2",
+                                "subtitle": "этажа",
+                                "icon": "@img/icons/handrail.svg"
+                                })
                             </div>
                             <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">142 м²</div>
-                                    <div class="benefits-card__subtitle">площадь застройки</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="@img/icons/house-design.svg" alt="Иконка">
-                                    </div>
-                                </div>
+                                @@include('./html/templates/_card.html', {
+                                "title": "142 м²",
+                                "subtitle": "площадь застройки",
+                                "icon": "@img/icons/house-design.svg",
+                                "background": "bg-light"
+                                })
                             </div>
                             <div class="col-3">
-                                <div class="benefits-card d-flex flex-column border rounded-sm">
-                                    <div class="benefits-card__value title">87.5 м²</div>
-                                    <div class="benefits-card__subtitle">жилая площадь</div>
-                                    <div class="benefits-card__icon ml-auto">
-                                        <img src="@img/icons/room.svg" alt="Иконка">
-                                    </div>
-                                </div>
+                                @@include('./html/templates/_card.html', {
+                                "title": "87.5 м²",
+                                "subtitle": "жилая площадь",
+                                "icon": "@img/icons/room.svg",
+                                "background": "bg-light"
+                                })
                             </div>
                         </div>
                     </div>
@@ -123,6 +117,109 @@
                         </div>
                     </div>
                 </div>
+                <div class="desc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-6">
+                                        @@include('./html/templates/_card.html', {
+                                        "title": "5",
+                                        "subtitle": "просторных комнат",
+                                        "icon": "@img/icons/virtual.svg"
+                                        })
+                                    </div>
+                                    <div class="col-6">
+                                        @@include('./html/templates/_card.html', {
+                                        "title": "3",
+                                        "subtitle": "спальни",
+                                        "icon": "@img/icons/bedroom.svg"
+                                        })
+                                    </div>
+                                    <div class="col-6">
+                                        @@include('./html/templates/_card.html', {
+                                        "title": "3",
+                                        "subtitle": "санузла",
+                                        "icon": "@img/icons/sink.svg"
+                                        })
+                                    </div>
+                                    <div class="col-6">
+                                        @@include('./html/templates/_card.html', {
+                                        "list": ["Прямая крыша", "Балкон", "Котельная", "Терраса"],
+                                        "icon": "@img/icons/width.svg"
+                                        })
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <a href="@img/plan.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm overflow-hidden">
+                                        <img src="@img/plan.jpg" alt="Фото планировки">
+                                    </a>
+                                    <a href="@img/plan-2.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm overflow-hidden mt-4">
+                                        <img src="@img/plan-2.jpg" alt="Фото планировки">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery">
+                    <div class="container">
+                        <div class="gallery__slider">
+                            <a href="" class="gallery__slide">
+                                <img src="@img/gallery/04.jpg" class="cover-image" alt="">
+                            </a>
+                            <a href="" class="gallery__slide">
+                                <img src="@img/gallery/05.jpg" class="cover-image" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <section class="tariffs">
+                    <div class="container">
+                        <h2 class="tariffs__title">Комплектации</h2>
+                        <p class="tariffs__subtitle title text-center">Предлагаем <span class="color-green">несколько комплектаций</span> под любые ваши пожелания</p>
+                        <div class="tariffs__body">
+                            <div class="row">
+                                <div class="col-4">
+                                    @@include('./html/templates/_tariff.html', {
+                                    "time": "30 дней",
+                                    "price": "от 4 млн ₽",
+                                    "step": 1,
+                                    "title": "Эконом",
+                                    "subtitle": "Готовый для дачного проживания дом на лето",
+                                    "image": "@img/tariffs/01.jpg"
+                                    })
+                                </div>
+                                <div class="col-4">
+                                    @@include('./html/templates/_tariff.html', {
+                                    "time": "42 дня",
+                                    "price": "от 5,6 млн ₽",
+                                    "step": 2,
+                                    "title": "Комфорт",
+                                    "subtitle": "Готовый для дачного проживания дом на весну – лето – осень",
+                                    "image": "@img/tariffs/02.jpg"
+                                    })
+                                </div>
+                                <div class="col-4">
+                                    @@include('./html/templates/_tariff.html', {
+                                    "time": "68 дней",
+                                    "price": "от 6,5 млн ₽",
+                                    "step": 3,
+                                    "title": "ПМЖ",
+                                    "subtitle": "Готовый «под ключ» дом для круглогодичного проживания",
+                                    "image": "@img/tariffs/03.jpg"
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                @@include('html/_cases.html', {
+                "title": 'Вдохновляйтесь <span class="color-green">историями владельцев</span> наших домов'
+                })
+                @@include('html/_projects.html', {})
             </main>
             @@include('html/_footer.html', {})
         </div>

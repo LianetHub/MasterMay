@@ -1,0 +1,42 @@
+<section class="projects">
+    <div class="container">
+        <h2 class="projects__title text-center">Наши проекты</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="projects__caption">
+                    Взгляните на <span class="color-green">самые популярные</span> проекты
+                </div>
+                <div class="projects__items">
+                    @@include('./templates/_project.html', {
+                    "image": "@img/projects/01.jpg",
+                    "title": "Жасмин",
+                    "type": "Проект дома",
+                    "material": "из бруса"
+                    })
+                    @@include('./templates/_project.html', {
+                    "image": "@img/projects/03.jpg",
+                    "title": "Делея",
+                    "type": "Проект дома",
+                    "material": "из бруса"
+                    })
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="projects__items">
+                    @@include('./templates/_project.html', {
+                    "image": "@img/projects/02.jpg",
+                    "title": "Агатис",
+                    "type": "Проект дома",
+                    "material": "из бруса"
+                    })
+                    @@include('./templates/_project.html', {
+                    "image": "@img/projects/03.jpg",
+                    "title": "Делея",
+                    "type": "Проект дома",
+                    "material": "из бруса"
+                    })
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

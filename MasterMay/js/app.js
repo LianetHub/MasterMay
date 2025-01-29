@@ -68,79 +68,82 @@ $(function () {
 
         let $target = $(e.target);
 
-
-        // menu
-        if ($target.hasClass('icon-menu')) {
-            $(".header").toggleClass("open-menu");
-            $("body").toggleClass("lock-menu");
+        if ($target.is('.favorite-btn')) {
+            $target.toggleClass('active')
         }
 
-        if ($target.is('.menu')) {
-            $(".header").removeClass("open-menu");
-            $("body").removeClass("lock-menu");
-        }
+        // // menu
+        // if ($target.hasClass('icon-menu')) {
+        //     $(".header").toggleClass("open-menu");
+        //     $("body").toggleClass("lock-menu");
+        // }
 
-        if ($target.is('.complectation__spoller')) {
-            $target.toggleClass('active').next().slideToggle()
-        }
+        // if ($target.is('.menu')) {
+        //     $(".header").removeClass("open-menu");
+        //     $("body").removeClass("lock-menu");
+        // }
 
-        if ($target.is('.similar__item-title')) {
-            $target.toggleClass('active').next().slideToggle();
-        }
+        // if ($target.is('.complectation__spoller')) {
+        //     $target.toggleClass('active').next().slideToggle()
+        // }
 
-
-        // submenu
-        if ($target.is('.menu__link')) {
-
-            let $submenu = $target.next();
-            if ($submenu.length > 0) {
-                e.preventDefault();
-            }
-
-            if ($target.hasClass('active')) {
-
-                $target.removeClass('active');
-                $submenu.removeClass('active');
-
-            } else {
-
-                $('.menu__link').removeClass('active');
-                $('.submenu').removeClass('active');
-
-                $target.addClass('active');
-                $submenu.addClass('active');
-            }
-
-        }
+        // if ($target.is('.similar__item-title')) {
+        //     $target.toggleClass('active').next().slideToggle();
+        // }
 
 
-        //  visual block 
-        if ($target.is('.visual__point')) {
-            let $currentAction = $target.parent(".visual__item");
-            let $currentList = $target.next(".visual__info");
+        // // submenu
+        // if ($target.is('.menu__link')) {
 
-            if ($target.hasClass('active')) {
-                $currentAction.removeClass('active');
-                $target.removeClass('active');
-                $currentList.slideUp();
-            } else {
+        //     let $submenu = $target.next();
+        //     if ($submenu.length > 0) {
+        //         e.preventDefault();
+        //     }
 
-                $('.visual__item').removeClass('active');
-                $('.visual__point').removeClass('active');
-                $('.visual__info').slideUp();
+        //     if ($target.hasClass('active')) {
+
+        //         $target.removeClass('active');
+        //         $submenu.removeClass('active');
+
+        //     } else {
+
+        //         $('.menu__link').removeClass('active');
+        //         $('.submenu').removeClass('active');
+
+        //         $target.addClass('active');
+        //         $submenu.addClass('active');
+        //     }
+
+        // }
 
 
-                $currentAction.addClass('active');
-                $target.addClass('active');
-                $currentList.slideDown();
-            }
-        }
+        // //  visual block 
+        // if ($target.is('.visual__point')) {
+        //     let $currentAction = $target.parent(".visual__item");
+        //     let $currentList = $target.next(".visual__info");
 
-        // clients tabs
-        if ($target.is('.clients__tabs-btn')) {
-            let index = $target.index();
-            updateClientsTabs(index);
-        }
+        //     if ($target.hasClass('active')) {
+        //         $currentAction.removeClass('active');
+        //         $target.removeClass('active');
+        //         $currentList.slideUp();
+        //     } else {
+
+        //         $('.visual__item').removeClass('active');
+        //         $('.visual__point').removeClass('active');
+        //         $('.visual__info').slideUp();
+
+
+        //         $currentAction.addClass('active');
+        //         $target.addClass('active');
+        //         $currentList.slideDown();
+        //     }
+        // }
+
+        // // clients tabs
+        // if ($target.is('.clients__tabs-btn')) {
+        //     let index = $target.index();
+        //     updateClientsTabs(index);
+        // }
 
 
     });

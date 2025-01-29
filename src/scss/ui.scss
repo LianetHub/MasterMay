@@ -46,6 +46,11 @@
 	line-height: 100%;
 }
 
+.subtitle {
+	font-size: 26px;
+	line-height: 120%;
+}
+
 // .title-lg {
 // 	font-weight: 500;
 // 	line-height: 1.4;
@@ -151,6 +156,49 @@
 
 .color-grey {
 	color: $grey;
+}
+
+.favorite-btn {
+	&::before {
+		@extend %ic, .icon-heart;
+		transition: all 0.3s ease 0s;
+	}
+	width: 1.5rem;
+	height: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-shrink: 0;
+	text-decoration: none;
+	color: inherit;
+	@media (any-hover: hover) {
+		&:hover {
+			color: $accent;
+		}
+	}
+	&.active {
+		&::before {
+			@extend %ic, .icon-heart-fill;
+			color: $accent;
+			animation: pulse 0.3s ease-in-out;
+			@keyframes pulse {
+				0% {
+					transform: scale(1);
+				}
+				50% {
+					transform: scale(1.4);
+				}
+				100% {
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+
+.bg-dark {
+	background: $text !important;
 }
 
 // .play-btn {

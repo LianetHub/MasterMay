@@ -8,7 +8,69 @@
         <div class="wrapper">
             @@include('html/_header.html', {})
             <main class="page">
-
+                <section class="prices">
+                    <div class="container">
+                        <ul class="prices__list d-flex">
+                            <li class="prices__item">
+                                <a href="" class="prices__item-link">
+                                    <span class="prices__item-image">
+                                        <img src="@img/project.jpg" alt="Фото проекта">
+                                    </span>
+                                    <span class="prices__item-title">Дома из бруса от 1.8 млн ₽</span>
+                                </a>
+                            </li>
+                            <li class="prices__item">
+                                <a href="" class="prices__item-link">
+                                    <span class="prices__item-image">
+                                        <img src="@img/project.jpg" alt="Фото проекта">
+                                    </span>
+                                    <span class="prices__item-title">Дома из бревна от 2 млн ₽</span>
+                                </a>
+                            </li>
+                            <li class="prices__item">
+                                <a href="" class="prices__item-link">
+                                    <span class="prices__item-image">
+                                        <img src="@img/project.jpg" alt="Фото проекта">
+                                    </span>
+                                    <span class="prices__item-title">Бани от 700 тыс ₽</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                @@include('html/_projects.html', {})
+                @@include('html/_cases.html', {
+                "title": 'Вдохновляйтесь <span class="color-green">историями владельцев</span> наших домов'
+                })
+                <section class="articles">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-3">
+                                @@include('./html/templates/_article-card.html', {
+                                "title": "Какой дом лучше выбрать",
+                                "image": "@img/articles/01.jpg",
+                                })
+                            </div>
+                            <div class="col-3">
+                                @@include('./html/templates/_article-card.html', {
+                                "title": "Современные технологии и производство",
+                                "image": "@img/articles/02.jpg",
+                                })
+                            </div>
+                            <div class="col-3">
+                                @@include('./html/templates/_article-card.html', {
+                                "title": "Прозрачная и понятная схема работы",
+                                })
+                            </div>
+                            <div class="col-3">
+                                @@include('./html/templates/_article-card.html', {
+                                "title": "Честные отзывы владельцев домов",
+                                "image": "@img/articles/03.jpg",
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>
             @@include('html/_footer.html', {})
         </div>
