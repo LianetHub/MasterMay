@@ -1,6 +1,6 @@
 <div class="tariff h-100 d-flex flex-column align-items-start rounded-sm border p-3">
     <div class="tariff__header w-100 d-flex justify-content-between align-items-center">
-        <div class="tariff__labels d-flex">
+        <div class="tariff__labels d-flex flex-wrap">
             <div class="tariff__label">@@time</div>
             <div class="tariff__label">@@price</div>
         </div>
@@ -26,8 +26,8 @@
     </div>
     <h3 class="tariff__title title">@@title</h3>
     <p class="tariff__subtitle subtitle">@@subtitle</p>
-    <div class="tariff__image masked rounded-sm">
-        <img src="@@image" alt="Фото комплектации">
+    <div class="tariff__image masked rounded-sm overflow-hidden w-100">
+        <img src="@@image" class="cover-image" alt="Фото комплектации">
     </div>
     <a href="" class="tariff__btn btn btn-primary icon-arrow">Выбрать</a>
 </div>

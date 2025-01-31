@@ -1,9 +1,53 @@
 .header {
-	border-bottom: 1px solid #acacac;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-bottom: 1px solid transparent;
+	z-index: 10;
+	transition: border-color 0.3s ease, background-color 0.3s ease;
+	background: #fff;
+
+	&.scroll {
+		border-bottom: 1px solid #acacac;
+		background-color: #fff;
+		.header__side.hide {
+			opacity: 1;
+			visibility: visible;
+		}
+
+		@media (min-width: $md3) {
+			.header__main {
+				border-left: 1px solid #acacac;
+			}
+		}
+	}
+	&.header_home {
+		@media (min-width: $md3) {
+			background: transparent;
+		}
+		@media (min-width: $md3) {
+			.header__main {
+				border-left: 1px solid #acacac;
+			}
+		}
+		.header__side {
+			@media (min-width: $md3) {
+				opacity: 0;
+				visibility: hidden;
+			}
+		}
+	}
+	.row {
+		--bs-gutter-x: 0;
+	}
 	// .header__side
 	&__side {
-		padding: 32px 0;
 		min-height: 100%;
+		padding: 10px 0;
+		@media (min-width: $md3) {
+			padding: 32px 0;
+		}
 	}
 	// .header__logo
 	&__logo {
@@ -14,9 +58,18 @@
 	}
 	// .header__main
 	&__main {
-		border-left: 1px solid #acacac;
-		padding: 35px 0 35px 60px;
 		min-height: 100%;
+		flex-direction: column;
+		padding: 10px 0;
+		@media (min-width: $md3) {
+			border-left: 1px solid #acacac;
+			padding: 25px 0 35px 60px;
+		}
+		@media (min-width: $md1) {
+			align-items: center;
+			flex-direction: row;
+			gap: 16px;
+		}
 	}
 	// .header__menu
 	&__menu {
@@ -24,14 +77,32 @@
 	// .header__actions
 	&__actions {
 		gap: 6px;
+		@media (min-width: $md3) {
+			margin-top: 12px;
+		}
+		@media (min-width: $md1) {
+			margin-top: 0;
+		}
 	}
 	// .header__action
 	&__action {
-		width: 50px;
-		height: 50px;
+		position: relative;
+	}
+	// .header__action-btn
+	&__action-btn {
 		padding: 10px;
+		cursor: pointer;
 		border-color: $grey !important;
+		background: #fff;
 		transition: background-color 0.3s ease, color 0.3s ease;
+		width: 32px;
+		height: 32px;
+		font-size: 12px;
+		@media (min-width: $md5) {
+			font-size: 16px;
+			width: 50px;
+			height: 50px;
+		}
 		@media (any-hover: hover) {
 			&:hover {
 				background: $accent;
@@ -49,18 +120,45 @@
 }
 
 .menu {
-	background: #fff;
-	left: 0;
-	width: 100%;
-	z-index: 1;
-
+	@media (max-width: $md3) {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba($color: $text, $alpha: 0.5);
+		z-index: 10;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 0.3s ease, visibility 0.3s ease;
+		.header.open-menu & {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
 	// .menu__body
 	&__body {
+		@media (max-width: $md3) {
+			background: #fff;
+			padding: 20px;
+			width: 75%;
+			min-width: 280px;
+			min-height: 100%;
+			margin-left: auto;
+			transform: translateX(100%);
+			.header.open-menu & {
+				transform: none;
+			}
+		}
+	}
+	&__logo {
+		max-width: 180px;
 	}
 	// .menu__list
 	&__list {
 		gap: 36px;
 		row-gap: 12px;
+		font-size: 18px;
 	}
 	// .menu__item
 	&__item {
@@ -133,31 +231,31 @@
 	background: rgba($color: #fff, $alpha: 0.8);
 	color: $text;
 	z-index: 11;
-	width: 80px;
-	height: 40px;
-	display: none;
+	border-radius: 50%;
+	border-color: $grey !important;
+	width: 32px;
+	height: 32px;
+	@media (min-width: $md5) {
+		width: 50px;
+		height: 50px;
+	}
+	@media (min-width: $md3) {
+		display: none;
+	}
 	& span {
 		display: block;
 		transition: transform 0.4s ease 0.4s, opacity 0.4s ease 0.4s;
 		will-change: transform;
 		pointer-events: none;
-		padding: 2.5px 4px;
-		@media (min-width: $md5) {
-			padding: 4.5px 4px;
-		}
+		padding: 2.5px 8px;
+
 		&::before {
 			content: "";
 			display: block;
 			height: 2px;
-			width: 40px;
+			width: 18px;
 			@media (min-width: $md5) {
 				width: 30px;
-			}
-			@media (min-width: $md2) {
-				width: 50px;
-			}
-			@media (min-width: $md0) {
-				width: 70px;
 			}
 			pointer-events: none;
 			background: currentColor;

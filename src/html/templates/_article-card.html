@@ -1,7 +1,9 @@
 <a href="" class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden bg-dark text-white">
-    <span class="article-card__title">@@title</span>
-    <span class="article-card__btn btn border-top border-left border-right text-center d-block">Подробнее</span>
+    <span class="article-card__title title-md">@@title</span>
+    <span class="article-card__btn btn btn-white text-center d-block">Подробнее</span>
+    @@if(typeof image !== 'undefined' ){
     <span class="article-card__image position-relative">
         <img src="@@image" alt="Фото статьи">
     </span>
+    }
 </a>

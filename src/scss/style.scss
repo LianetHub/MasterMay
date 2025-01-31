@@ -39,6 +39,7 @@ $md6: 379.98px;
 $header: var(--header-height, 140px);
 
 $text: #121212;
+$light: #efe9e5;
 $grey: #acacac;
 $accent: #79b445;
 $secondary: #d4cd8e;
@@ -48,7 +49,6 @@ $secondary: #d4cd8e;
 //ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ
 body {
 	font-family: $fontfamily, sans-serif;
-
 	color: $text;
 	min-width: 320px;
 	line-height: normal;
@@ -91,6 +91,20 @@ body {
 .page {
 	flex: 1 1 auto;
 	overflow-x: clip;
+	padding-bottom: 50px;
+}
+
+section {
+	padding: 35px 0;
+	@media (min-width: $md4) {
+		padding: 51px 0;
+	}
+	&:first-child {
+		padding-top: 0;
+	}
+	&:last-child {
+		padding-bottom: 0;
+	}
 }
 // =======================ОСНОВНОЙ БЛОК===================
 

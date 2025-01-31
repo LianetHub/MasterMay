@@ -1,35 +1,47 @@
-<header class="header">
+<header class="header @@if(isHome===true){ header_home}">
     <div class="container">
-        <div class="row">
-            <div class="col-6">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-4">
                 <div class="header__side d-flex align-items-center justify-content-between">
                     <a href="/" class="header__logo">
                         <img src="@img/logo.svg" alt="logo">
                     </a>
-                    <p class="header__tagline color-grey">Ваши правнуки оценят наше качество</p>
+                    <p class="header__tagline color-grey d-lg-block d-none">Ваши правнуки оценят наше качество</p>
                 </div>
             </div>
-            <div class="col-6">
-                <div class="header__main d-flex align-items-center">
+            <div class="col-lg-6 col-8 align-self-stretch">
+                <div class="header__main d-flex justify-content-between">
                     <nav aria-label="Меню в шапке" class="header__menu menu">
-                        <ul class="menu__list d-flex align-items-center flex-wrap font-weight-medium">
-                            <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                            <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
-                        </ul>
+                        <div class="menu__body">
+                            <a href="/" class="menu__logo d-lg-none d-block">
+                                <img src="@img/logo.svg" alt="logo">
+                            </a>
+                            <ul class="menu__list d-flex align-items-lg-center flex-lg-wrap flex-lg-row flex-column justify-content-end font-weight-medium mt-lg-0 mt-5">
+                                <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
+                                <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
+                            </ul>
+                        </div>
                     </nav>
-                    <div class="header__actions d-flex">
-                        <span class="header__action rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
-                        <a href="" class="header__action rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
-                        <a href="" class="header__action border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
-                        <span role="button" class="header__menu-btn icon-menu">
+                    <div class="header__actions d-flex justify-content-end">
+                        <div class="header__action">
+                            <span class="header__action-btn rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
+                        </div>
+                        <div class="header__action">
+                            <a href="" class="header__action-btn rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
+                        </div>
+                        <div class="header__action">
+                            <a href="" class="header__action-btn border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
+                        </div>
+                        <a href="" class="header__action-btn rounded-circle border-top border-bottom d-lg-none d-flex justify-content-center align-items-center icon-phone"></a>
+                        <span role="button" class="header__menu-btn icon-menu border-top border-right">
                             <span></span>
                             <span></span>
                             <span></span>
                         </span>
+                        <a href="" class="header__callback btn btn-primary icon-arrow d-lg-flex d-none">Связаться</a>
                     </div>
-                    <a href="" class="header__callback btn btn-primary icon-arrow">Связаться</a>
                 </div>
             </div>
         </div>

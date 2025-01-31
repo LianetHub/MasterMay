@@ -1,0 +1,44 @@
+<svg width="356" height="470" viewBox="0 0 356 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="6" height="470" fill="#EFE9E5"/>
+<rect x="20" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="35" width="6" height="30" fill="#EFE9E5"/>
+<rect x="55" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="70" width="6" height="30" fill="#EFE9E5"/>
+<rect x="90" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="105" width="6" height="30" fill="#EFE9E5"/>
+<rect x="125" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="140" width="6" height="30" fill="#EFE9E5"/>
+<rect x="160" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="175" width="6" height="30" fill="#EFE9E5"/>
+<rect x="195" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="210" width="6" height="30" fill="#EFE9E5"/>
+<rect x="230" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="245" width="6" height="30" fill="#EFE9E5"/>
+<rect x="265.001" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="280.001" width="6" height="30" fill="#EFE9E5"/>
+<rect x="300.001" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="315.001" width="6" height="30" fill="#EFE9E5"/>
+<rect x="335.001" width="1.0001" height="20.0001" fill="#ACACAC"/>
+<rect x="350.001" width="6" height="140" fill="#EFE9E5"/>
+<mask id="mask0_2024_2038" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="280" y="90" width="50" height="50">
+<path d="M280 90H330V140H280V90Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_2024_2038)">
+<path d="M297.073 138.389V135.749C297.073 131.361 300.63 127.804 305.017 127.804C309.405 127.804 312.962 131.361 312.962 135.749V138.518" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M309.011 123.804C309.011 126.01 307.223 127.798 305.017 127.798C302.812 127.798 301.023 126.01 301.023 123.804C301.023 121.599 302.812 119.81 305.017 119.81C307.223 119.81 309.011 121.599 309.011 123.804Z" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M294.682 102.393V95.3465H287.383V109.684" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M324.255 111.33V138.511" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M285.745 111.33V138.511" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M310.046 97.1214L305 92.0751L280.981 116.094" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M328.941 116.017L323.077 110.152" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M330 138.51H280" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M308.931 101.303C308.931 106.706 313.311 111.086 318.714 111.086C324.117 111.086 328.497 106.706 328.497 101.303C328.497 95.9002 324.117 91.5203 318.714 91.5203C313.311 91.5203 308.931 95.9002 308.931 101.303Z" stroke="#121212" stroke-width="2.92969" stroke-miterlimit="10"/>
+<path d="M314.579 100.458L317.869 103.748L323.029 98.5875" stroke="url(#paint0_linear_2024_2038)" stroke-width="2.92969" stroke-miterlimit="10"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_2024_2038" x1="331.242" y1="101.168" x2="314.579" y2="101.168" gradientUnits="userSpaceOnUse">
+<stop stop-color="#7EBA47"/>
+<stop offset="1" stop-color="#4C7E3A"/>
+</linearGradient>
+</defs>
+</svg>

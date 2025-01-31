@@ -6,36 +6,148 @@
 
     <body>
         <div class="wrapper">
-            @@include('html/_header.html', {})
+            @@include('html/_header.html', {
+            "isHome": true
+            })
             <main class="page">
+                <section class="promo">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <h1 class="promo__title title-xl">Лучшие дома и&nbsp;бани <span class="color-green">из бруса и&nbsp;бревна</span></h1>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="promo__image masked rounded overflow-hidden w-100">
+                                    <img src="@img/promo.jpg" class="cover-image" alt="Промо фото">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="promo__logo h-100 d-flex align-items-end mt-lg-0 mt-3 overflow-hidden">
+                                    <img src="@img/logo.svg" alt="Логотип">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="promo__column d-flex flex-column mt-lg-0 mt-5 overflow-hidden">
+                                    <div class="promo__tagline title-md">Используем качественное дерево собственного производства из Костромского леса</div>
+                                    <div class="promo__scroll color-grey icon-mouse d-lg-inline-flex d-none align-items-center">
+                                        <span class="order-first">Листайте</span>
+                                        <span class="order-last">дальше</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="benefits">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-4 col-12">
+                                <div class="card h-100 p-5 d-flex flex-column border rounded-sm" style="background-image: url('@img/card-bg.jpg');">
+                                    <div class="title-md text-white">Цифры <br> и факты</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card h-100 p-3 d-flex flex-column border rounded-sm">
+                                    <div class="card__header d-flex align-items-start justify-content-between flex-xl-row flex-column  mb-auto">
+                                        <div class="card__header-column">
+                                            <div class="card__value title">81.7 <small>%</small></div>
+                                            <div class="card__subtitle subtitle">довольных клиентов</div>
+                                        </div>
+                                        <div class="card__icon p-xl-3 ml-xl-auto mt-xl-0 mt-5">
+                                            <img src="@img/icons/clients.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                    <a href="" class="card__btn btn btn-white justify-content-center">
+                                        Отзывы клиентов
+                                        <span class="card__btn-quantity">223</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-md-6">
+                                <div class="card h-100 p-3 d-flex flex-column border rounded-sm">
+                                    <div class="card__header d-flex align-items-start justify-content-between flex-xl-row flex-column  mb-auto">
+                                        <div class="card__header-column">
+                                            <div class="card__value title">45 000</div>
+                                            <div class="card__subtitle subtitle">построено квадратных метров</div>
+                                        </div>
+                                        <div class="card__icon p-xl-3 ml-xl-auto mt-xl-0 mt-5">
+                                            <img src="@img/icons/square.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                    <a href="" class="card__btn btn btn-white justify-content-center">
+                                        Наши работы
+                                        <span class="card__btn-quantity">133</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 p-3 d-flex flex-column border rounded-sm">
+                                    <div class="card__header d-flex align-items-start justify-content-between flex-xl-row flex-column  mb-auto">
+                                        <div class="card__header-column">
+                                            <div class="card__value title">0 судебных дел</div>
+                                            <div class="card__subtitle subtitle">за шестнадцать лет работы в строительстве домов</div>
+                                        </div>
+                                        <div class="card__icon p-xl-3 ml-xl-auto mt-xl-0 mt-5">
+                                            <img src="@img/icons/low.svg" alt="Иконка">
+                                        </div>
+                                    </div>
+                                    <a href="" class="card__btn btn btn-white justify-content-center">
+                                        О компании “Мастер Май”
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card h-100 p-3 d-flex flex-column border rounded-sm bg-light">
+                                    <div class="card__header d-flex align-items-start justify-content-between flex-xl-row flex-column  mb-auto">
+                                        <div class="card__header-column">
+                                            <div class="card__value title">20-23 дня</div>
+                                            <div class="card__subtitle subtitle">нам нужно для постройки дома&nbsp;под усадку</div>
+                                        </div>
+                                        <div class="card__image ml-auto">
+                                            <img src="@img/days.jpg" class="cover-image" alt="Фото проекта">
+                                        </div>
+                                    </div>
+                                    <div class="card__lines">
+                                        <img src="@img/lines.svg" alt="декор">
+                                    </div>
+                                    <a href="" class="card__btn btn btn-white justify-content-center">
+                                        Технологии строительства
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
                 <section class="prices">
                     <div class="container">
-                        <ul class="prices__list d-flex">
-                            <li class="prices__item">
-                                <a href="" class="prices__item-link">
-                                    <span class="prices__item-image">
-                                        <img src="@img/project.jpg" alt="Фото проекта">
-                                    </span>
-                                    <span class="prices__item-title">Дома из бруса от 1.8 млн ₽</span>
-                                </a>
-                            </li>
-                            <li class="prices__item">
-                                <a href="" class="prices__item-link">
-                                    <span class="prices__item-image">
-                                        <img src="@img/project.jpg" alt="Фото проекта">
-                                    </span>
-                                    <span class="prices__item-title">Дома из бревна от 2 млн ₽</span>
-                                </a>
-                            </li>
-                            <li class="prices__item">
-                                <a href="" class="prices__item-link">
-                                    <span class="prices__item-image">
-                                        <img src="@img/project.jpg" alt="Фото проекта">
-                                    </span>
-                                    <span class="prices__item-title">Бани от 700 тыс ₽</span>
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="prices__body bg-dark text-white rounded-sm">
+                            <ul class="prices__list d-flex flex-column">
+                                <li class="prices__item w-100 d-flex justify-content-end">
+                                    <a href="" class="prices__item-link d-flex align-items-center justify-content-end w-100">
+                                        <span class="prices__item-image rounded-sm overflow-hidden d-md-block d-none">
+                                            <img src="@img/project-banner.jpg" class="cover-image" alt="Фото проекта">
+                                        </span>
+                                        <span class="prices__item-title title d-block w-100">Дома из бруса от 1.8 млн ₽</span>
+                                    </a>
+                                </li>
+                                <li class="prices__item w-100 d-flex justify-content-end">
+                                    <a href="" class="prices__item-link d-flex align-items-center justify-content-end w-100">
+                                        <span class="prices__item-image rounded-sm overflow-hidden d-md-block d-none">
+                                            <img src="@img/promo.jpg" class="cover-image" alt="Фото проекта">
+                                        </span>
+                                        <span class="prices__item-title title d-block w-100">Дома из бревна от 2 млн ₽</span>
+                                    </a>
+                                </li>
+                                <li class="prices__item w-100 d-flex justify-content-end">
+                                    <a href="" class="prices__item-link d-flex align-items-center justify-content-end w-100">
+                                        <span class="prices__item-image rounded-sm overflow-hidden d-md-block d-none">
+                                            <img src="@img/project.jpg" class="cover-image" alt="Фото проекта">
+                                        </span>
+                                        <span class="prices__item-title title d-block w-100">Бани от 700 тыс ₽</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </section>
                 @@include('html/_projects.html', {})
@@ -45,28 +157,64 @@
                 <section class="articles">
                     <div class="container">
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-xl-3 col-md-6">
                                 @@include('./html/templates/_article-card.html', {
-                                "title": "Какой дом лучше выбрать",
+                                "title": "Какой дом <br> лучше выбрать",
                                 "image": "@img/articles/01.jpg",
                                 })
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-md-6">
                                 @@include('./html/templates/_article-card.html', {
                                 "title": "Современные технологии и производство",
                                 "image": "@img/articles/02.jpg",
                                 })
                             </div>
-                            <div class="col-3">
-                                @@include('./html/templates/_article-card.html', {
-                                "title": "Прозрачная и понятная схема работы",
-                                })
+                            <div class="col-xl-3 col-md-6">
+                                <div class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden border">
+                                    <div class="article-card__decor">
+                                        <img src="@img/article-decor.svg" alt="декор">
+                                    </div>
+                                    <div class="article-card__title title-md">Прозрачная и понятная схема работы</div>
+                                </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-xl-3 col-md-6">
                                 @@include('./html/templates/_article-card.html', {
                                 "title": "Честные отзывы владельцев домов",
                                 "image": "@img/articles/03.jpg",
                                 })
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="media">
+                    <div class="container">
+                        <h2 class="media__title text-center font-weight-medium">Полезные ролики</h2>
+                        <div class="media__content d-flex flex-xl-row flex-column">
+                            <h2 class="media__tagline title-md">Экспертные мнения,советы и&nbsp;обзоры</h2>
+                            <div class="media__body">
+                                <div class="media__items d-flex flex-column">
+                                    @@include('./html/templates/_media-item.html', {
+                                    "image": "@img/media/01.jpg",
+                                    "title": 'Отзыв владельцев дома под усадку по проекту “Жасмин” в п. Иваново',
+                                    "time": "18 сент, 2024"
+                                    })
+                                    @@include('./html/templates/_media-item.html', {
+                                    "image": "@img/media/02.jpg",
+                                    "title": 'Мнение владельцев дома под усадку по проекту "Орхидея" в п. Сосновка',
+                                    "time": "13 сент, 2024"
+                                    })
+                                    @@include('./html/templates/_media-item.html', {
+                                    "image": "@img/media/03.jpg",
+                                    "title": 'Отзывы хозяев дома, возведенного по проекту "Лаванда" в д. Березовка',
+                                    "time": "11 сент, 2024"
+                                    })
+                                    @@include('./html/templates/_media-item.html', {
+                                    "image": "@img/media/04.jpg",
+                                    "title": 'Отзыв о доме под усадку по проекту "Фиалка" от жителей поселка Кленово',
+                                    "time": "3 сент, 2024"
+                                    })
+                                </div>
+                                <a href="" class="media__btn btn btn-white w-100">Посмотреть все полезные ролики</a>
                             </div>
                         </div>
                     </div>

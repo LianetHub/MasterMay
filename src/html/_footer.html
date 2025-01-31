@@ -1,39 +1,95 @@
 <footer class="footer">
     <div class="container">
-        <div class="d-flex">
-            <div class="footer__side rounded-sm bg-dark text-white d-flex flex-column justify-content-between">
-                <div class="footer__socials d-flex flex-column">
-                    <a href="" class="footer__social icon-vk"></a>
-                    <a href="" class="footer__social icon-youtube"></a>
-                    <a href="" class="footer__social icon-whatsapp"></a>
-                    <a href="" class="footer__social icon-telegram"></a>
+        <div class="footer__wrapper d-flex flex-sm-row flex-column">
+            <div class="footer__side rounded-sm bg-dark text-white d-flex flex-sm-column flex-row align-items-center justify-content-between">
+                <div class="footer__socials d-flex flex-sm-column flex-row flex-sm-nowrap flex-wrap">
+                    <a href="" class="footer__social d-flex justify-content-center align-items-center rounded-circle border-left border-bottom icon-vk"></a>
+                    <a href="" class="footer__social d-flex justify-content-center align-items-center rounded-circle border-top border-bottom icon-youtube"></a>
+                    <a href="" class="footer__social d-flex justify-content-center align-items-center rounded-circle border-top border-bottom icon-whatsapp"></a>
+                    <a href="" class="footer__social d-flex justify-content-center align-items-center rounded-circle border-top border-right icon-telegram"></a>
                 </div>
                 <a href="/" class="footer__logo">
                     <img src="@img/logo-short.svg" alt="">
                 </a>
             </div>
             <div class="footer__content rounded-sm bg-dark text-white">
-                <div class="footer__body d-flex">
-                    <div class="footer__main">
-                        <h2 class="footer__title title">Давайте знакомиться?</h2>
-                        <a href="" class="footer__btn btn btn-light icon-arrow">Отправить заявку</a>
-                        <div class="footer__image">
-                            <img src="@img/footer.png" alt="Фото проекта">
+                <div class="footer__body">
+                    <div class="row">
+                        <div class="col-xl-6">
+                            <div class="footer__main">
+                                <h2 class="footer__title title-md">Давайте <br> знакомиться?</h2>
+                                <a href="" class="footer__btn btn btn-light icon-arrow">Отправить заявку</a>
+                                <div class="footer__image position-relative">
+                                    <div class="footer__image-mask rounded-sm position-absolute w-100 overflow-hidden">
+                                        <img src="@img/footer-mask.jpg" class="cover-image" alt="Задний фон">
+                                    </div>
+                                    <img src="@img/footer.png" alt="Фото проекта">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <nav class="footer__menu" aria-label="Меню">
+                                <div class="row">
+                                    <div class="col-xxl-4 col-md-6">
+                                        <div class="footer__menu-block">
+                                            <a href="" class="footer__menu-caption d-block border-top border-bottom text-center">Проекты</a>
+                                            <ul class="footer__menu-list d-flex flex-column align-items-start">
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Дома из бруса</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Дома из бревна</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Бани</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Портфолио</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer__menu-block">
+                                            <a href="" class="footer__menu-caption d-block border-top border-bottom text-center">О компании</a>
+                                            <ul class="footer__menu-list d-flex flex-column align-items-start">
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Наши ценности</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Технологии</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Производство</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Услуги</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Отзывы</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Контакты</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xxl-4 offset-xxl-2 col-md-6">
+                                        <div class="footer__menu-block">
+                                            <a href="" class="footer__menu-caption d-block border-top border-bottom text-center">Клиенту</a>
+                                            <ul class="footer__menu-list d-flex flex-column align-items-start">
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Доставка и оплата</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Схема работы</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Вопросы и ответы</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Полезные статьи</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Акции</a></li>
+                                                <li class="footer__menu-item"><a href="" class="footer__menu-link">Документы</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="footer__menu-block">
+                                            <a href="" class="footer__menu-caption d-block border-top border-bottom text-center">Контакты</a>
+                                            <ul class="footer__menu-list d-flex flex-column align-items-start">
+                                                <li class="footer__menu-item"><a href="tel:+79159156848" class="footer__menu-link icon-phone">+7 (915) 915-68-48</a></li>
+                                                <li class="footer__menu-item"><a href="tel:+79159156848" class="footer__menu-link icon-phone">+7 (915) 915-68-48</a></li>
+                                                <li class="footer__menu-item"><a href="mailto:info@mastermay.ru" class="footer__menu-link">info@mastermay.ru</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
-                <div class="footer__bottom d-flex color-grey">
+                <div class="footer__bottom d-flex align-content-center justify-content-between flex-wrap">
                     <div class="footer__copy">
                         ООО «БЕРДО» 2007 — 2024
                     </div>
-                    <ul class="footer__details">
+                    <ul class="footer__details d-flex flex-sm-wrap flex-sm-row flex-column mr-sm-auto">
                         <li class="footer__details-item">СК МАСТЕРМАЙ</li>
                         <li class="footer__details-item">ИНН 4408003799</li>
                         <li class="footer__details-item">КПП 440801001</li>
                         <li class="footer__details-item">ОГРН 1064433017109</li>
                         <li class="footer__details-item"><a href="">Политика конфиденциальности</a></li>
                     </ul>
-                    <a href="" class="footer__prod">
+                    <a href="" class="footer__prod d-inline-flex align-items-center">
                         Разработка и продвижение
                         <img src="@img/logo-prod.svg" alt="БОБРЫ">
                     </a>
