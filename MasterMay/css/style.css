@@ -7327,18 +7327,18 @@ input[type=number] {
 }
 
 @font-face {
-  font-family: "icons";
+  font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
-  font-weight: 400;
+  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Manrope";
+  font-family: "icons";
   font-display: swap;
-  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
-  font-weight: 700;
+  src: url("../fonts/icons.woff2") format("woff2"), url("../fonts/icons.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -7353,8 +7353,8 @@ input[type=number] {
 @font-face {
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"), url("../fonts/Manrope-Medium.woff") format("woff");
-  font-weight: 500;
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"), url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -8131,12 +8131,12 @@ textarea.form-control {
 
 .header.scroll {
   border-bottom: 1px solid #acacac;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
-.header.scroll .header__side.hide {
-  opacity: 1;
-  visibility: visible;
+.header.scroll .header__side {
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .header .row {
@@ -11777,21 +11777,21 @@ section:last-child {
     font-size: 20px;
   }
 
-  .header.scroll .header__main {
-    border-left: 1px solid #acacac;
-  }
-
   .header.header_home {
     background: transparent;
   }
 
   .header.header_home .header__main {
-    border-left: 1px solid #acacac;
+    border-left: 1px solid #fff;
   }
 
   .header.header_home .header__side {
     opacity: 0;
     visibility: hidden;
+  }
+
+  .header.scroll .header__main {
+    border-left: 1px solid #acacac !important;
   }
 
   .header__side {

@@ -8,33 +8,33 @@
 	transition: border-color 0.3s ease, background-color 0.3s ease;
 	background: #fff;
 
-	&.scroll {
-		border-bottom: 1px solid #acacac;
-		background-color: #fff;
-		.header__side.hide {
-			opacity: 1;
-			visibility: visible;
-		}
-
-		@media (min-width: $md3) {
-			.header__main {
-				border-left: 1px solid #acacac;
-			}
-		}
-	}
 	&.header_home {
 		@media (min-width: $md3) {
 			background: transparent;
 		}
 		@media (min-width: $md3) {
 			.header__main {
-				border-left: 1px solid #acacac;
+				border-left: 1px solid #fff;
 			}
 		}
 		.header__side {
 			@media (min-width: $md3) {
 				opacity: 0;
 				visibility: hidden;
+			}
+		}
+	}
+	&.scroll {
+		border-bottom: 1px solid #acacac;
+		background-color: #fff !important;
+		.header__side {
+			opacity: 1 !important;
+			visibility: visible !important;
+		}
+
+		@media (min-width: $md3) {
+			.header__main {
+				border-left: 1px solid #acacac !important;
 			}
 		}
 	}
