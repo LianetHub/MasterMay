@@ -17,6 +17,10 @@
 	// .footer__socials
 	&__socials {
 		gap: 6px;
+		@media (min-width: $md4) {
+			position: sticky;
+			top: calc($header + 16px);
+		}
 	}
 	// .footer__social
 	&__social {
@@ -45,8 +49,15 @@
 		@media (min-width: $md5) {
 			padding: 60px 30px 30px 30px;
 		}
-		background-image: url("@img/footer-decor.svg");
-		background-repeat: no-repeat;
+		@media (min-width: $md2) {
+			background-image: url("@img/footer-decor.svg");
+			background-position: 0 bottom;
+			background-repeat: no-repeat;
+			background-size: 50% auto;
+		}
+		@media (min-width: $md1) {
+			background-size: auto;
+		}
 	}
 	// .footer__body
 	&__body {
@@ -146,15 +157,47 @@
 	}
 	// .footer__menu-link
 	&__menu-link {
+		position: relative;
 		display: flex;
 		align-items: center;
 		gap: 10px;
-		transition: color 0.3s ease;
+		color: #fff;
 		&::before {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			height: 16px;
+		}
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 0;
+			height: 1px;
+			width: 100%;
+			background: currentColor;
+			transform: scaleX(0);
+			transform-origin: left;
+		}
+
+		&::after {
+			transform-origin: right;
+			transition: transform 0.3s ease 0s;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				&::before {
+					transform: scaleX(1);
+					transition: transform 0.3s ease;
+				}
+				&::after {
+					transition: transform 0s ease 0.3s;
+					transform: scaleX(1);
+				}
+			}
 		}
 	}
 	// .footer__bottom

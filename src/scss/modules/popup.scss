@@ -1,5 +1,5 @@
 .fancybox-bg {
-	background: rgba($color: #1d1d1d, $alpha: 0.4);
+	background: rgba($color: #121212, $alpha: 0.5);
 }
 
 .fancybox__content {
@@ -16,23 +16,40 @@
 	display: none;
 	width: 100%;
 	background: #fff;
-	max-width: 910px;
+	max-width: 960px;
+	margin: 0 !important;
 	&::-webkit-scrollbar {
 		display: none;
 	}
 	scrollbar-width: 0;
-	overflow: visible;
-	border-radius: 10px;
+	overflow-x: hidden;
+	overflow-y: auto;
 	padding: 30px 20px;
 	@media (min-width: $md5) {
-		padding: 70px 60px;
-	}
-	&.popup-lg {
-		max-width: 1420px;
 		padding: 60px;
 	}
-	&.popup-md {
-		max-width: 1180px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	&.popup-lg {
+		max-width: 1450px;
+	}
+	.row {
+		--bs-gutter-x: 60px;
+	}
+	.tariff {
+		@media (any-hover: hover) {
+			&:hover {
+				background: transparent;
+				.tariff__labels {
+					background: #efe9e5;
+				}
+				.tariff__steps-fill {
+					background: #efe9e5;
+				}
+			}
+		}
 	}
 	.fancybox-button {
 		&[data-fancybox-close] {
@@ -43,89 +60,156 @@
 			padding: 5px;
 			@media (min-width: $md4) {
 				padding: 10px;
-				top: 30px;
-				right: 30px;
-				width: 60px;
-				height: 60px;
+				width: 50px;
+				height: 50px;
 			}
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			background: transparent;
 			border-radius: 50%;
-			color: #999;
-			border: 1px solid #999;
+			color: #fff;
+			background: $text;
+			border: 1px solid $text;
+			opacity: 1;
 			transition: background-color 0.3s ease 0s, color 0.3s ease 0s, border-color 0.3s ease 0s;
 			@media (any-hover: hover) {
 				&:hover {
-					background: $text;
+					background: $accent;
 					color: #fff;
-					border-color: $text;
+					border-color: $accent;
+				}
+			}
+			& svg {
+				width: 20px;
+				height: 20px;
+				@media (min-width: $md4) {
+					width: 40px;
+					height: 40px;
 				}
 			}
 		}
 	}
-}
-
-.succes {
-	background: $text;
-	color: #fff;
-	// .succes__header
-	&__header {
-		gap: 70px;
-		row-gap: 20px;
+	// .popup__checkboxes
+	&__checkboxes {
+		margin-top: 40px;
+		gap: 10px;
 	}
-	// .succes__header-main
-	&__header-main {
-		max-width: 510px;
-	}
-	// .succes__title
-	&__title {
-	}
-	// .succes__subtitle
-	&__subtitle {
-		font-weight: 300;
-		line-height: 100%;
-		margin-top: 20px;
-		@media (min-width: $md4) {
-			font-size: 20px;
-			margin-top: 30px;
+	// .popup__form
+	&__form {
+		margin-top: 40px;
+		flex-direction: column;
+		&.active {
+			display: flex;
 		}
-		@media (min-width: $md2) {
-			margin-top: 50px;
-			font-size: 30px;
-		}
+		display: none;
 	}
-	// .succes__header-icon
-	&__header-icon {
-		align-self: center;
+	// .popup__form-bottom
+	&__form-bottom {
+		margin-top: 60px;
+		gap: 20px;
 	}
-	// .succes__btn
-	&__btn {
-		margin-top: 30px;
+	// .popup__form-privacy
+	&__form-privacy {
+		max-width: 329px;
 		font-size: 14px;
-		padding: 16px;
-		@media (min-width: $md4) {
-			padding: 20px;
-			margin-top: 40px;
-			font-size: 18px;
+		line-height: 100%;
+	}
+	// .popup__form-btn
+	&__form-btn {
+	}
+	// .popup__form-fields
+	&__form-fields {
+		gap: 20px;
+		padding: 20px;
+	}
+
+	// .popup__side
+	&__side {
+		position: sticky;
+		top: 16px;
+		padding: 40px;
+		background-image: url("@img/order-decor.svg"), url("@img/order-bg.svg");
+		background-position: center 5%, 0 100%;
+		background-size: auto, 70% auto;
+		background-repeat: no-repeat;
+	}
+	// .popup__list
+	&__list {
+		gap: 20px;
+		position: relative;
+		padding-bottom: 50px;
+		&::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -40px;
+			right: -40px;
+			height: 100%;
+			pointer-events: none;
+			background: url("data:image/svg+xml,%3Csvg width='94' height='20' viewBox='0 0 94 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_2024_2034' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='94' height='20'%3E%3Crect x='94' y='20' width='94' height='20' transform='rotate(-180 94 20)' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_2024_2034)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M94 431C94 430.964 94 430.854 93.9999 430.517L93.9999 21.0171C93.9999 15.4941 90.7281 11.0171 86.6922 11.0171H-116.539C-117.091 11.0171 -117.539 10.5691 -117.539 10.0171C-117.539 9.4651 -117.091 9.01709 -116.539 9.01709H86.6922C90.7281 9.01709 93.9999 4.54009 93.9999 -0.98291L93.9999 -400.983L93.9997 -410.983L94 431Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A")
+					calc(100% + 1px) bottom / auto no-repeat,
+				url("data:image/svg+xml,%3Csvg width='94' height='20' viewBox='0 0 94 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_2024_2032' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='94' height='20'%3E%3Crect width='94' height='20' fill='%23D9D9D9'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_2024_2032)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 -411C0 -410.964 1.91181e-05 -410.854 0.00013632 -410.517V-1.01709C0.00013632 4.50591 3.27189 8.98291 7.30781 8.98291H210.539C211.091 8.98291 211.539 9.43091 211.539 9.98291C211.539 10.5349 211.091 10.9829 210.539 10.9829H7.30783C3.2719 10.9829 0.00013632 15.4599 0.00013632 20.9829V420.983L0.000330628 430.983L0 -411Z' fill='white'/%3E%3C/g%3E%3C/svg%3E%0A") -1px
+					bottom / auto no-repeat;
 		}
-		@media (min-width: $md2) {
-			padding: 28px;
-			margin-top: 60px;
-			font-size: 20px;
+	}
+	// .popup__list-item
+	&__list-item {
+	}
+	// .popup__list-caption
+	&__list-caption {
+		margin-bottom: 10px;
+		font-size: 14px;
+	}
+	// .popup__list-row
+	&__list-row {
+		padding-bottom: 20px;
+		border-bottom: 1px solid $grey;
+	}
+	// .popup__list-text
+	&__list-text {
+	}
+	// .popup__list-value
+	&__list-value {
+	}
+	&__privacy {
+		font-size: 14px;
+	}
+	// .popup__tariffs
+	&__tariffs {
+		.row {
+			@media (max-width: $md2) {
+				display: contents !important;
+			}
 		}
-		font-weight: 700;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-		border-radius: 50px;
-		border: 1px solid #fff;
-		width: 100%;
-		display: block;
-		text-align: center;
-		cursor: pointer;
-		transition: background-color 0.3s ease 0s, color 0.3s ease 0s;
-		@media (any-hover: hover) {
-			&:hover {
-				background: #fff;
-				color: $text;
+	}
+	// .popup__tariffs-block
+	&__tariffs-block {
+		@media (max-width: $md2) {
+			display: contents !important;
+		}
+		line-height: 160%;
+	}
+	&__tariffs-list {
+		li {
+			position: relative;
+			padding-left: 32px;
+			&::before {
+				content: "+";
+				font-weight: 800;
+				position: absolute;
+				top: 4px;
+				left: 0;
+				width: 18px;
+				height: 18px;
+				background: #efe9e5;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 4px;
+			}
+			&:not(:last-child) {
+				margin-bottom: 20px;
 			}
 		}
 	}

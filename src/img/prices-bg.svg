@@ -1,11 +1,14 @@
 <svg width="577" height="831" viewBox="0 0 577 831" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_2024_1867" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="577" height="831">
-<rect width="577" height="831" fill="#D9D9D9"/>
-</mask>
-<g mask="url(#mask0_2024_1867)">
-<path opacity="0.4" d="M-409.5 744.692V-220.162L479.5 259.818V1231.16L-409.5 744.692Z" stroke="white"/>
-<path opacity="0.1" d="M-478.5 790.692V-174.162L410.5 305.818V1277.16L-478.5 790.692Z" stroke="white"/>
-<path opacity="0.1" d="M-337.5 701.357V-264.162L551.5 216.149V1188.16L-337.5 701.357Z" stroke="white"/>
-</g>
-<path opacity="0.3" d="M248.632 582.304L248.865 582L248.632 581.696L214.973 537.68L259.293 582L214.973 626.32L248.632 582.304Z" stroke="white"/>
+    <mask id="mask0_2024_1867" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+        width="577" height="831">
+        <rect width="577" height="831" fill="#D9D9D9" />
+    </mask>
+    <g mask="url(#mask0_2024_1867)">
+        <path opacity="0.4" d="M-409.5 744.692V-220.162L479.5 259.818V1231.16L-409.5 744.692Z"
+            stroke="white" />
+        <path opacity="0.1" d="M-478.5 790.692V-174.162L410.5 305.818V1277.16L-478.5 790.692Z"
+            stroke="white" />
+        <path opacity="0.1" d="M-337.5 701.357V-264.162L551.5 216.149V1188.16L-337.5 701.357Z"
+            stroke="white" />
+    </g>
 </svg>

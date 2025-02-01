@@ -10,37 +10,86 @@
                 </div>
             </div>
             <div class="col-lg-6 col-8 align-self-stretch">
-                <div class="header__main d-flex justify-content-between">
+                <div class="header__main d-flex flex-wrap">
                     <nav aria-label="Меню в шапке" class="header__menu menu">
                         <div class="menu__body">
                             <a href="/" class="menu__logo d-lg-none d-block">
                                 <img src="@img/logo.svg" alt="logo">
                             </a>
-                            <ul class="menu__list d-flex align-items-lg-center flex-lg-wrap flex-lg-row flex-column justify-content-end font-weight-medium mt-lg-0 mt-5">
-                                <li class="menu__item"><a href="" class="menu__link">Проекты</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Портфолио</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-                                <li class="menu__item"><a href="" class="menu__link">Клиенту</a></li>
+                            <ul class="menu__list d-flex align-items-lg-center flex-lg-row flex-column justify-content-end font-weight-medium mt-lg-0 mt-5">
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Проекты</a>
+                                    <ul class="submenu">
+                                        <li class="submenu__item">
+                                            <a href="" class="submenu__link">
+                                                Дома из бревна <span>66</span>
+                                            </a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="" class="submenu__link">
+                                                Дома из бруса <span>133</span>
+                                            </a>
+                                        </li>
+                                        <li class="submenu__item">
+                                            <a href="" class="submenu__link">
+                                                Бани <span>31</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Портфолио</a>
+
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">О нас</a>
+
+                                </li>
+                                <li class="menu__item">
+                                    <a href="" class="menu__link">Клиенту</a>
+
+                                </li>
+                            </ul>
+                            <ul class="menu__contacts d-lg-none d-flex flex-column mt-5">
+                                <li class="menu__contacts-item"><a href="tel:+79159156848" class="menu__contacts-link icon-phone">+7 (915) 915-68-48</a></li>
+                                <li class="menu__contacts-item"><a href="tel:+79159156848" class="menu__contacts-link icon-phone">+7 (915) 915-68-48</a></li>
+                                <li class="menu__contacts-item"><a href="mailto:info@mastermay.ru" class="menu__contacts-link">info@mastermay.ru</a></li>
+                            </ul>
+                            <ul class="menu__socials d-lg-none d-flex flex-wrap mt-5">
+                                <a href="" class="menu__social d-flex justify-content-center align-items-center rounded-circle border-left border-bottom icon-vk"></a>
+                                <a href="" class="menu__social d-flex justify-content-center align-items-center rounded-circle border-top border-bottom icon-youtube"></a>
+                                <a href="" class="menu__social d-flex justify-content-center align-items-center rounded-circle border-top border-bottom icon-whatsapp"></a>
+                                <a href="" class="menu__social d-flex justify-content-center align-items-center rounded-circle border-top border-right icon-telegram"></a>
                             </ul>
                         </div>
                     </nav>
                     <div class="header__actions d-flex justify-content-end">
                         <div class="header__action">
-                            <span class="header__action-btn rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
+                            <span data-seach-toggler class="header__action-btn rounded-circle border-left border-bottom d-flex justify-content-center align-items-center icon-search"></span>
+                            <div role="form" class="header__search">
+                                <input type="text" name="search" class="header__search-input" placeholder="Что нужно найти?">
+                                <span role="button" class="header__search-btn icon-arrow"></span>
+                            </div>
                         </div>
                         <div class="header__action">
                             <a href="" class="header__action-btn rounded-circle border-top border-bottom d-flex justify-content-center align-items-center icon-heart"></a>
+                            <div class="header__action-body">
+                                <a href="">Избранные проекты: 2</a>
+                            </div>
                         </div>
                         <div class="header__action">
                             <a href="" class="header__action-btn border-top border-right rounded-circle d-flex justify-content-center align-items-center icon-user"></a>
+                            <div class="header__action-body">
+                                <a href="">Перейти в кабинет</a>
+                            </div>
                         </div>
-                        <a href="" class="header__action-btn rounded-circle border-top border-bottom d-lg-none d-flex justify-content-center align-items-center icon-phone"></a>
+                        <a href="#callback" data-fancybox class="header__action-btn rounded-circle border-top border-bottom d-lg-none d-flex justify-content-center align-items-center icon-phone"></a>
                         <span role="button" class="header__menu-btn icon-menu border-top border-right">
                             <span></span>
                             <span></span>
                             <span></span>
                         </span>
-                        <a href="" class="header__callback btn btn-primary icon-arrow d-lg-flex d-none">Связаться</a>
+                        <a href="#callback" data-fancybox class="header__callback btn btn-primary icon-arrow d-lg-flex d-none">Связаться</a>
                     </div>
                 </div>
             </div>

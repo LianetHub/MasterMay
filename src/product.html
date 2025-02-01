@@ -19,7 +19,7 @@
                             <div class="project-card__body">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <ul class="project-card__stats d-flex flex-wrap align-items-center">
+                                        <ul class="project-card__stats d-flex align-items-center">
                                             <li class="project-card__stat">11 x 13 м</li>
                                             <li class="project-card__stat">124 м²</li>
                                             <li class="project-card__stat">Одноэтажный</li>
@@ -46,7 +46,7 @@
                                         <div class="project-about__info-text">
                                             <span class="project-about__caption">О проекте</span>
                                             <h2 class="project-about__title title-md">
-                                                Используем качественное <span class="color-green">дерево собственного производства</span> из Костромского леса
+                                                Используем качественное <span class="color-green">дерево собственного производства</span> из&nbsp;Костромского леса
                                             </h2>
                                         </div>
                                     </div>
@@ -60,41 +60,47 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="project-card__panel d-flex align-items-center justify-content-center flex-sm-nowrap flex-wrap">
+                            <span class="project-card__panel-action flex-shrink-0 rounded-circle d-flex justify-content-center align-items-center border-left border-bottom icon-share"></span>
+                            <span class="project-card__panel-action flex-shrink-0 rounded-circle d-flex justify-content-center align-items-center border-top border-right icon-print"></span>
+                            <span class="project-card__panel-action flex-shrink-0 rounded-circle d-flex justify-content-center align-items-center border-top border-bottom icon-heart"></span>
+                            <a href="" class="project-card__panel-btn btn btn-primary icon-arrow">Хочу такой дом</a>
+                        </div>
                     </div>
                 </section>
                 <div class="benefits">
                     <div class="container">
                         <div class="row">
-                            <div class="col-xl-3 col-sm-6">
+                            <div class="col-xl-3 col-6">
                                 @@include('./html/templates/_card.html', {
                                 "title": "9 х 12 м",
-                                "subtitle": "габариты дома",
+                                "subtitle": "габариты <br> дома",
                                 "icon": "@img/icons/width.svg"
                                 })
                             </div>
-                            <div class="col-xl-3 col-sm-6">
+                            <div class="col-xl-3 col-6">
                                 @@include('./html/templates/_card.html', {
                                 "title": "2",
                                 "subtitle": "этажа",
                                 "icon": "@img/icons/handrail.svg"
                                 })
                             </div>
-                            <div class="col-xl-3 col-sm-6">
-                                @@include('./html/templates/_card.html', {
-                                "title": "142 м²",
-                                "subtitle": "площадь застройки",
-                                "icon": "@img/icons/house-design.svg",
-                                "background": "bg-light"
-                                })
+                            <div class="col-6">
+                                <div class="benefits__cards h-100 bg-light rounded-sm">
+                                    @@include('./html/templates/_card.html', {
+                                    "title": "142 м²",
+                                    "subtitle": "площадь <br> застройки",
+                                    "icon" : "@img/icons/house-design.svg",
+                                    })
+                                    <span class="benefits__cards-separator"></span>
+                                    @@include('./html/templates/_card.html', {
+                                    "title": "87.5 м²",
+                                    "subtitle": "жилая <br> площадь",
+                                    "icon": "@img/icons/room.svg",
+                                    })
+                                </div>
                             </div>
-                            <div class="col-xl-3 col-sm-6">
-                                @@include('./html/templates/_card.html', {
-                                "title": "87.5 м²",
-                                "subtitle": "жилая площадь",
-                                "icon": "@img/icons/room.svg",
-                                "background": "bg-light"
-                                })
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -125,31 +131,31 @@
                             <div class="col-xl-6">
                                 <div class="desc__cards">
                                     <div class="row">
-                                        <div class="col-sm-6">
+                                        <div class="col-6">
                                             @@include('./html/templates/_card.html', {
                                             "title": "5",
-                                            "subtitle": "просторных комнат",
+                                            "subtitle": "просторных <br> комнат",
                                             "icon": "@img/icons/virtual.svg"
                                             })
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-6">
                                             @@include('./html/templates/_card.html', {
                                             "title": "3",
                                             "subtitle": "спальни",
                                             "icon": "@img/icons/bedroom.svg"
                                             })
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-6">
                                             @@include('./html/templates/_card.html', {
                                             "title": "3",
                                             "subtitle": "санузла",
                                             "icon": "@img/icons/sink.svg"
                                             })
                                         </div>
-                                        <div class="col-sm-6">
+                                        <div class="col-6">
                                             @@include('./html/templates/_card.html', {
                                             "list": ["Прямая крыша", "Балкон", "Котельная", "Терраса"],
-                                            "icon": "@img/icons/width.svg"
+                                            "icon": "@img/icons/balcony.svg"
                                             })
                                         </div>
                                     </div>
@@ -157,10 +163,10 @@
                             </div>
                             <div class="col-xl-6">
                                 <div class="d-flex flex-column">
-                                    <a href="@img/plan.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm overflow-hidden">
+                                    <a href="@img/plan.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm border overflow-hidden">
                                         <img src="@img/plan.jpg" alt="Фото планировки">
                                     </a>
-                                    <a href="@img/plan-2.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm overflow-hidden mt-4">
+                                    <a href="@img/plan-2.jpg" data-fancybox="plans" class="desc__plan d-block rounded-sm border overflow-hidden mt-4">
                                         <img src="@img/plan-2.jpg" alt="Фото планировки">
                                     </a>
                                 </div>
@@ -195,7 +201,7 @@
                 <section class="tariffs">
                     <div class="container">
                         <h2 class="tariffs__title text-center font-weight-medium">Комплектации</h2>
-                        <p class="tariffs__subtitle title text-center">Предлагаем <span class="color-green">несколько комплектаций</span> под любые ваши пожелания</p>
+                        <p class="tariffs__subtitle title-lg text-center">Предлагаем <span class="color-green">несколько <br> комплектаций</span> под любые ваши пожелания</p>
                         <div class="tariffs__body">
                             <div class="row">
                                 <div class="col-xl-4 col-md-6">
@@ -214,7 +220,7 @@
                                     "price": "от 5,6 млн ₽",
                                     "step": 2,
                                     "title": "Комфорт",
-                                    "subtitle": "Готовый для дачного проживания дом на весну – лето – осень",
+                                    "subtitle": "Готовый для дачного проживания дом на&nbsp;весну – лето – осень",
                                     "image": "@img/tariffs/02.jpg"
                                     })
                                 </div>
@@ -237,7 +243,7 @@
                         <div class="row">
                             <div class="col-xl-3 col-md-6">
                                 @@include('./html/templates/_article-card.html', {
-                                "title": "Познакомьтесь с нашими технологиями в стройке",
+                                "title": "Познакомьтесь с&nbsp;нашими технологиями в&nbsp;стройке",
                                 "image": "@img/articles/04.jpg",
                                 })
                             </div>
@@ -252,7 +258,8 @@
                                     <div class="article-card__decor">
                                         <img src="@img/article-decor-2.svg" alt="декор">
                                     </div>
-                                    <div class="article-card__title title-md">Почувствуйте себя дизайнером, подбирая окраску дома</div>
+                                    <span class="article-card__btn btn btn-white text-center d-block m-0 ml-3 mr-3">Подробнее</span>
+                                    <div class="article-card__title title-md mt-auto">Почувствуйте себя дизайнером, подбирая окраску дома</div>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-md-6">
@@ -271,6 +278,7 @@
             </main>
             @@include('html/_footer.html', {})
         </div>
+        @@include('html/_popup.html', {})
         @@include('html/_js.html', {})
     </body>
 </html>

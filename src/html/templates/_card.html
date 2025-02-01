@@ -2,12 +2,12 @@
     @@if(typeof title !== 'undefined'){<div class="card__value title">@@title</div>}
     @@if(typeof subtitle !== 'undefined'){<div class="card__subtitle subtitle">@@subtitle</div>}
     @@if(typeof list !== 'undefined' && list.length > 0){
-    <ul class="card__list d-flex flex-column subtitle">
+    <ul class="card__list d-flex flex-column subtitle p-sm-4 ">
         @@for (var i = 0; i < list.length; i++) { <li class="card__list-item">`+list[i]+`</li>
             }
     </ul>
     }
-    <div class="card__icon p-3 ml-auto mt-auto">
+    <div class="card__icon p-sm-3 ml-auto mt-auto">
         <img src="@@icon" alt="Иконка">
     </div>
 </div>

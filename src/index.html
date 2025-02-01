@@ -17,12 +17,12 @@
                                 <h1 class="promo__title title-xl">Лучшие дома и&nbsp;бани <span class="color-green">из бруса и&nbsp;бревна</span></h1>
                             </div>
                             <div class="col-lg-12">
-                                <div class="promo__image masked rounded overflow-hidden w-100">
+                                <div class="promo__image masked rounded-sm overflow-hidden w-100">
                                     <img src="@img/promo.jpg" class="cover-image" alt="Промо фото">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="promo__logo h-100 d-flex align-items-end mt-lg-0 mt-3 overflow-hidden">
+                                <div class="promo__logo h-100 d-lg-flex d-none align-items-end mt-lg-0 mt-3 overflow-hidden">
                                     <img src="@img/logo.svg" alt="Логотип">
                                 </div>
                             </div>
@@ -103,12 +103,12 @@
                                             <div class="card__value title">20-23 дня</div>
                                             <div class="card__subtitle subtitle">нам нужно для постройки дома&nbsp;под усадку</div>
                                         </div>
-                                        <div class="card__image ml-auto">
-                                            <img src="@img/days.jpg" class="cover-image" alt="Фото проекта">
-                                        </div>
                                     </div>
                                     <div class="card__lines">
                                         <img src="@img/lines.svg" alt="декор">
+                                        <div class="card__image ml-auto">
+                                            <img src="@img/days.jpg" class="cover-image" alt="Фото проекта">
+                                        </div>
                                     </div>
                                     <a href="" class="card__btn btn btn-white justify-content-center">
                                         Технологии строительства
@@ -123,27 +123,27 @@
                         <div class="prices__body bg-dark text-white rounded-sm">
                             <ul class="prices__list d-flex flex-column">
                                 <li class="prices__item w-100 d-flex justify-content-end">
-                                    <a href="" class="prices__item-link d-flex align-items-center justify-content-end w-100">
-                                        <span class="prices__item-image rounded-sm overflow-hidden d-md-block d-none">
-                                            <img src="@img/project-banner.jpg" class="cover-image" alt="Фото проекта">
+                                    <a href="" class="prices__item-link d-flex flex-md-row flex-column align-items-md-center justify-content-end w-100">
+                                        <span class="prices__item-image">
+                                            <img src="@img/project-banner.jpg" class="cover-image rounded-sm" alt="Фото проекта">
                                         </span>
-                                        <span class="prices__item-title title d-block w-100">Дома из бруса от 1.8 млн ₽</span>
+                                        <span class="prices__item-title title d-block w-100">Дома из бруса <br class="d-xxl-none d-md-block d-none"> от 1.8 млн ₽</span>
                                     </a>
                                 </li>
                                 <li class="prices__item w-100 d-flex justify-content-end">
-                                    <a href="" class="prices__item-link d-flex align-items-center justify-content-end w-100">
-                                        <span class="prices__item-image rounded-sm overflow-hidden d-md-block d-none">
-                                            <img src="@img/promo.jpg" class="cover-image" alt="Фото проекта">
+                                    <a href="" class="prices__item-link d-flex flex-md-row flex-column align-items-md-center justify-content-end w-100">
+                                        <span class="prices__item-image">
+                                            <img src="@img/promo.jpg" class="cover-image rounded-sm" alt="Фото проекта">
                                         </span>
-                                        <span class="prices__item-title title d-block w-100">Дома из бревна от 2 млн ₽</span>
+                                        <span class="prices__item-title title d-block w-100">Дома из бревна <br class="d-xxl-none d-md-block d-none"> от 2 млн ₽</span>
                                     </a>
                                 </li>
                                 <li class="prices__item w-100 d-flex justify-content-end">
-                                    <a href="" class="prices__item-link d-flex align-items-center justify-content-end w-100">
-                                        <span class="prices__item-image rounded-sm overflow-hidden d-md-block d-none">
-                                            <img src="@img/project.jpg" class="cover-image" alt="Фото проекта">
+                                    <a href="" class="prices__item-link d-flex flex-md-row flex-column align-items-md-center justify-content-end w-100">
+                                        <span class="prices__item-image">
+                                            <img src="@img/project.jpg" class="cover-image rounded-sm" alt="Фото проекта">
                                         </span>
-                                        <span class="prices__item-title title d-block w-100">Бани от 700 тыс ₽</span>
+                                        <span class="prices__item-title title d-block w-100">Бани <br class="d-xxl-none d-md-block d-none"> от 700 тыс ₽</span>
                                     </a>
                                 </li>
                             </ul>
@@ -171,9 +171,10 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden border">
-                                    <div class="article-card__decor">
-                                        <img src="@img/article-decor.svg" alt="декор">
-                                    </div>
+                                    <picture class="article-card__decor">
+                                        <source media="(min-width: 1199.98px)" srcset="@img/article-decor.svg">
+                                        <img src="@img/article-decor-mobile.svg" alt="декор">
+                                    </picture>
                                     <div class="article-card__title title-md">Прозрачная и понятная схема работы</div>
                                 </div>
                             </div>
@@ -189,7 +190,7 @@
                 <section class="media">
                     <div class="container">
                         <h2 class="media__title text-center font-weight-medium">Полезные ролики</h2>
-                        <div class="media__content d-flex flex-xl-row flex-column">
+                        <div class="media__content d-flex flex-xl-row flex-column align-items-start">
                             <h2 class="media__tagline title-md">Экспертные мнения,советы и&nbsp;обзоры</h2>
                             <div class="media__body">
                                 <div class="media__items d-flex flex-column">
@@ -222,6 +223,7 @@
             </main>
             @@include('html/_footer.html', {})
         </div>
+        @@include('html/_popup.html', {})
         @@include('html/_js.html', {})
     </body>
 </html>

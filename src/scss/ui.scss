@@ -25,7 +25,7 @@
 				center / 35% auto no-repeat,
 			url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='212' height='20' viewBox='0 0 212 20' fill='none'%3E%3Cg clip-path='url(%23clip0_2023_1751)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M212 431C212 430.964 212 430.854 212 430.517L212 21.0171C212 15.4941 208.728 11.0171 204.692 11.0171H1.461C0.908999 11.0171 0.460999 10.5691 0.460999 10.0171C0.460999 9.4651 0.908999 9.01709 1.461 9.01709H204.692C208.728 9.01709 212 4.54009 212 -0.98291L212 -400.983L212 -410.983L212 431Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2023_1751'%3E%3Crect width='212' height='20' fill='white' transform='matrix(-1 0 0 -1 212 20)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
 				calc(100% + 1px) center / 35% auto no-repeat;
-		@media (min-width: $md5) {
+		@media (min-width: $md2) {
 			background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='212' height='20' viewBox='0 0 212 20' fill='none'%3E%3Cg clip-path='url(%23clip0_2023_1749)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 -411C0 -410.964 1.91181e-05 -410.854 0.00013632 -410.517V-1.01709C0.00013632 4.50591 3.27189 8.98291 7.30781 8.98291H210.539C211.091 8.98291 211.539 9.43091 211.539 9.98291C211.539 10.5349 211.091 10.9829 210.539 10.9829H7.30783C3.2719 10.9829 0.00013632 15.4599 0.00013632 20.9829V420.983L0.000330628 430.983L0 -411Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2023_1749'%3E%3Crect width='212' height='20' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E") -1px
 					center / auto no-repeat,
 				url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='212' height='20' viewBox='0 0 212 20' fill='none'%3E%3Cg clip-path='url(%23clip0_2023_1751)'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M212 431C212 430.964 212 430.854 212 430.517L212 21.0171C212 15.4941 208.728 11.0171 204.692 11.0171H1.461C0.908999 11.0171 0.460999 10.5691 0.460999 10.0171C0.460999 9.4651 0.908999 9.01709 1.461 9.01709H204.692C208.728 9.01709 212 4.54009 212 -0.98291L212 -400.983L212 -410.983L212 431Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_2023_1751'%3E%3Crect width='212' height='20' fill='white' transform='matrix(-1 0 0 -1 212 20)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E")
@@ -70,11 +70,14 @@
 	font-weight: 700;
 	line-height: 100%;
 	font-size: 32px;
-	@media (min-width: $md5) {
+	@media (min-width: $md4) {
+		font-size: 40px;
+	}
+	@media (min-width: $md3) {
 		font-size: 50px;
 	}
 	@media (min-width: $md2) {
-		font-size: 60px;
+		font-size: 55px;
 	}
 	@media (min-width: $md0) {
 		font-size: 70px;
@@ -85,14 +88,14 @@
 	font-weight: 700;
 	line-height: 100%;
 	font-size: 28px;
-	@media (min-width: $md5) {
+	@media (min-width: $md2) {
 		font-size: 35px;
 	}
 	@media (min-width: $md1) {
 		font-size: 40px;
 	}
 	@media (min-width: $md0) {
-		font-size: 50px;
+		font-size: 45px;
 	}
 }
 
@@ -114,6 +117,9 @@
 		font-size: 22px;
 	}
 	@media (min-width: $md2) {
+		font-size: 24px;
+	}
+	@media (min-width: $md0) {
 		font-size: 26px;
 	}
 }

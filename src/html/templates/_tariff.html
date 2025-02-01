@@ -1,6 +1,6 @@
 <div class="tariff h-100 d-flex flex-column align-items-start rounded-sm border p-3">
     <div class="tariff__header w-100 d-flex justify-content-between align-items-center">
-        <div class="tariff__labels d-flex flex-wrap">
+        <div class="tariff__labels d-flex">
             <div class="tariff__label">@@time</div>
             <div class="tariff__label">@@price</div>
         </div>
@@ -8,13 +8,13 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="65" height="67" viewBox="0 0 65 67" fill="none">
                 @@if(step===1){
                 <path d="M0 0H65V19H10.9127L0 0Z" fill="#79B445" />
-                <path d="M13.7842 24H64.9998V43H24.6969L13.7842 24Z" fill="#EFE9E5" />
-                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" fill="#EFE9E5" />
+                <path d="M13.7842 24H64.9998V43H24.6969L13.7842 24Z" class="tariff__steps-fill" fill="#EFE9E5" />
+                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" class="tariff__steps-fill" fill="#EFE9E5" />
                 }
                 @@if(step===2){
                 <path d="M0 0H65V19H10.9127L0 0Z" fill="#79B445" />
                 <path d="M13.7842 24H64.9998V43H24.6969L13.7842 24Z" fill="#79B445" />
-                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" fill="#EFE9E5" />
+                <path d="M27.5684 48H64.9996V67H38.481L27.5684 48Z" class="tariff__steps-fill" fill="#EFE9E5" />
                 }
                 @@if(step===3){
                 <path d="M0 0H65V19H10.9127L0 0Z" fill="#79B445" />
@@ -26,8 +26,8 @@
     </div>
     <h3 class="tariff__title title">@@title</h3>
     <p class="tariff__subtitle subtitle">@@subtitle</p>
-    <div class="tariff__image masked rounded-sm overflow-hidden w-100">
+    <div class="tariff__image rounded-sm overflow-hidden w-100">
         <img src="@@image" class="cover-image" alt="Фото комплектации">
     </div>
-    <a href="" class="tariff__btn btn btn-primary icon-arrow">Выбрать</a>
+    <a href="#complectations" data-fancybox class="tariff__btn btn btn-primary icon-arrow">Выбрать</a>
 </div>
