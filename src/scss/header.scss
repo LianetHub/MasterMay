@@ -57,7 +57,10 @@
 	}
 	// .header__logo
 	&__logo {
-		max-width: 275px;
+		max-width: 200px;
+		@media (min-width: $md1) {
+			max-width: 275px;
+		}
 	}
 	// .header__tagline
 	&__tagline {

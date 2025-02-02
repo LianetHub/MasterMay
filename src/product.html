@@ -85,7 +85,7 @@
                                 "icon": "@img/icons/handrail.svg"
                                 })
                             </div>
-                            <div class="col-6">
+                            <div class="col-xl-6">
                                 <div class="benefits__cards h-100 bg-light rounded-sm">
                                     @@include('./html/templates/_card.html', {
                                     "title": "142 м²",
@@ -255,9 +255,11 @@
                             </div>
                             <div class="col-xl-3 col-md-6">
                                 <div class="article-card h-100 d-flex flex-column rounded-sm overflow-hidden border">
-                                    <div class="article-card__decor">
-                                        <img src="@img/article-decor-2.svg" alt="декор">
-                                    </div>
+
+                                    <picture class="article-card__decor">
+                                        <source media="(min-width: 1199.98px)" srcset="@img/article-decor-2.svg">
+                                        <img src="@img/article-decor-2-mobile.svg" alt="декор">
+                                    </picture>
                                     <span class="article-card__btn btn btn-white text-center d-block m-0 ml-3 mr-3">Подробнее</span>
                                     <div class="article-card__title title-md mt-auto">Почувствуйте себя дизайнером, подбирая окраску дома</div>
                                 </div>

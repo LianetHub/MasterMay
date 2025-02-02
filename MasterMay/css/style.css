@@ -7823,6 +7823,7 @@ body.lock {
   width: 30px;
   height: 30px;
   padding: 5px;
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -8487,7 +8488,7 @@ textarea.form-control {
 }
 
 .header__logo {
-  max-width: 275px;
+  max-width: 200px;
 }
 
 .header__tagline {
@@ -14900,6 +14901,10 @@ section:last-child {
 
   .title-lg {
     font-size: 40px;
+  }
+
+  .header__logo {
+    max-width: 275px;
   }
 
   .header__main {
